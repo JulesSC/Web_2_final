@@ -1,3 +1,27 @@
 /* =============
     Wellness
 ============= */
+#wellness{
+
+    #contents{
+        display: grid;
+        grid-template-columns: 6px auto 6px;
+        grid-template-areas:". contents .";
+
+        @include md{
+            grid-template-columns: 88px auto 88px;
+        }
+
+        @include lg{
+            grid-template-columns: 10px auto 10px;
+        }
+
+        @include lg{
+            grid-template-columns: 210px auto 210px;
+        }
+        
+        section{
+            grid-area: contents;
+        }
+    }
+}

@@ -6,10 +6,6 @@ header{
     grid-template-columns: 6px auto 6px;
     grid-template-areas:". header .";
 
-    #header{
-        grid-area: header;
-    }
-
     @include md{
         grid-template-columns: 88px auto 88px;
     }
@@ -20,5 +16,9 @@ header{
 
     @include lg{
         grid-template-columns: 210px auto 210px;
+    }
+
+    #header{
+        grid-area: header;
     }
 }
