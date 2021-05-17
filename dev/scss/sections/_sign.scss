@@ -22,8 +22,10 @@
         grid-area: contents;
 
         ul{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            @include md{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
     }
 }

@@ -455,9 +455,32 @@ header #header {
   grid-area: header;
 }
 
-/* =============
-    Footer
-============= */
+footer {
+  display: grid;
+  grid-template-columns: 6px auto 6px;
+  grid-template-areas: ". footer .";
+}
+@media (min-width: 768px) {
+  footer {
+    grid-template-columns: 88px auto 88px;
+  }
+}
+@media (min-width: 992px) {
+  footer {
+    grid-template-columns: 10px auto 10px;
+  }
+}
+@media (min-width: 992px) {
+  footer {
+    grid-template-columns: 210px auto 210px;
+  }
+}
+footer div {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 /* =============
     Hero
 ============= */
@@ -639,7 +662,9 @@ header #header {
 #sign div {
   grid-area: contents;
 }
-#sign div ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+@media (min-width: 768px) {
+  #sign div ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
