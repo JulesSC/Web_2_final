@@ -21,6 +21,13 @@
             @include xl{
                 grid-template-columns: 212px auto 212px;
             }
+
+            ul{
+                @include md{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
         }
     }
 }

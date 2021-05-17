@@ -1,3 +1,39 @@
 /* =============
     Accommodation
 ============= */
+#accommodation{
+    display: grid;
+    grid-template-columns: 36px auto 36px;
+    grid-template-areas:". contents .";
+
+    @include md{
+        grid-template-columns: 88px auto 88px;
+    }
+
+    @include lg{
+        grid-template-columns: 95px auto 95px;
+    }
+
+    @include lg{
+        grid-template-columns: 118px auto 118px;
+    }
+
+    div{
+        grid-area: contents;
+
+        ul{
+            @include lg{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        i{
+            display: none;
+
+            @include lg{
+                display: list-item;
+            }
+        }
+    }
+}

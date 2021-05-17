@@ -507,6 +507,12 @@ footer div {
     grid-template-columns: 212px auto 212px;
   }
 }
+@media (min-width: 768px) {
+  #hero #hero-body section ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 /* =============
     Intro
@@ -538,6 +544,44 @@ footer div {
 /* =============
     Accommodation
 ============= */
+#accommodation {
+  display: grid;
+  grid-template-columns: 36px auto 36px;
+  grid-template-areas: ". contents .";
+}
+@media (min-width: 768px) {
+  #accommodation {
+    grid-template-columns: 88px auto 88px;
+  }
+}
+@media (min-width: 992px) {
+  #accommodation {
+    grid-template-columns: 95px auto 95px;
+  }
+}
+@media (min-width: 992px) {
+  #accommodation {
+    grid-template-columns: 118px auto 118px;
+  }
+}
+#accommodation div {
+  grid-area: contents;
+}
+@media (min-width: 992px) {
+  #accommodation div ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+#accommodation div i {
+  display: none;
+}
+@media (min-width: 992px) {
+  #accommodation div i {
+    display: list-item;
+  }
+}
+
 /* =============
     Wellness
 ============= */
