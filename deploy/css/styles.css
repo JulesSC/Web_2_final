@@ -518,24 +518,35 @@ header #header {
 /* =============
     Wellness
 ============= */
+@media (min-width: 768px) {
+  #wellness {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "body image";
+  }
+}
+#wellness #image {
+  grid-area: image;
+}
 #wellness #contents {
+  grid-area: body;
   display: grid;
   grid-template-columns: 6px auto 6px;
   grid-template-areas: ". contents .";
 }
 @media (min-width: 768px) {
   #wellness #contents {
-    grid-template-columns: 88px auto 88px;
+    grid-template-columns: 32px auto 32px;
   }
 }
 @media (min-width: 992px) {
   #wellness #contents {
-    grid-template-columns: 10px auto 10px;
+    grid-template-columns: 75px auto 75px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #wellness #contents {
-    grid-template-columns: 210px auto 210px;
+    grid-template-columns: 155px auto 155px;
   }
 }
 #wellness #contents section {
@@ -545,6 +556,12 @@ header #header {
 /* =============
     Dining
 ============= */
+@media (min-width: 768px) {
+  #dining {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
 #dining #contents {
   display: grid;
   grid-template-columns: 6px auto 6px;
@@ -552,17 +569,17 @@ header #header {
 }
 @media (min-width: 768px) {
   #dining #contents {
-    grid-template-columns: 88px auto 88px;
+    grid-template-columns: 32px auto 32px;
   }
 }
 @media (min-width: 992px) {
   #dining #contents {
-    grid-template-columns: 10px auto 10px;
+    grid-template-columns: 75px auto 75px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #dining #contents {
-    grid-template-columns: 210px auto 210px;
+    grid-template-columns: 155px auto 155px;
   }
 }
 #dining #contents section {

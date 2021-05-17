@@ -2,22 +2,33 @@
     Wellness
 ============= */
 #wellness{
+    @include md{
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "body image";
+    }
+
+    #image{
+        grid-area: image;
+    }
 
     #contents{
+        grid-area: body;
+
         display: grid;
         grid-template-columns: 6px auto 6px;
         grid-template-areas:". contents .";
 
         @include md{
-            grid-template-columns: 88px auto 88px;
+            grid-template-columns: 32px auto 32px;
         }
 
         @include lg{
-            grid-template-columns: 10px auto 10px;
+            grid-template-columns: 75px auto 75px;
         }
 
-        @include lg{
-            grid-template-columns: 210px auto 210px;
+        @include xl{
+            grid-template-columns: 155px auto 155px;
         }
         
         section{
