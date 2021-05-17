@@ -1,3 +1,24 @@
 /* =============
     Intro
 ============= */
+#intro{
+    display: grid;
+    grid-template-columns: 6px auto 6px;
+    grid-template-areas:". contents .";
+
+    @include md{
+        grid-template-columns: 200px auto 200px;
+    }
+
+    @include lg{
+        grid-template-columns: 250px auto 250px;
+    }
+
+    @include lg{
+        grid-template-columns: 360px auto 360px;
+    }
+
+    #contents{
+        grid-area: contents;
+    }
+}
