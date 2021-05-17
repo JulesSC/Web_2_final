@@ -5,10 +5,10 @@
     #hero-body{
         display: grid;
         grid-template-columns: 86px auto 86px;
-        grid-template-areas: ". hero-body .";
+        grid-template-areas: ". content .";
         
         section{
-            grid-area: hero-body;
+            grid-area: content;
 
             @include md{
                 grid-template-columns: 104px auto 104px;

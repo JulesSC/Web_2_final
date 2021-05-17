@@ -464,10 +464,10 @@ header #header {
 #hero #hero-body {
   display: grid;
   grid-template-columns: 86px auto 86px;
-  grid-template-areas: ". hero-body .";
+  grid-template-areas: ". content .";
 }
 #hero #hero-body section {
-  grid-area: hero-body;
+  grid-area: content;
 }
 @media (min-width: 768px) {
   #hero #hero-body section {
