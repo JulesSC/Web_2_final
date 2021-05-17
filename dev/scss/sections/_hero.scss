@@ -1,3 +1,26 @@
 /* =============
     Hero
 ============= */
+#hero{
+    #hero-body{
+        display: grid;
+        grid-template-columns: 86px auto 86px;
+        grid-template-areas: ". hero-body .";
+        
+        section{
+            grid-area: hero-body;
+
+            @include md{
+                grid-template-columns: 104px auto 104px;
+            }
+    
+            @include lg{
+                grid-template-columns: 130px auto 130px;
+            }
+    
+            @include xl{
+                grid-template-columns: 212px auto 212px;
+            }
+        }
+    }
+}

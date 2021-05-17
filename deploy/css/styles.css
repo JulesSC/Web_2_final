@@ -379,6 +379,10 @@ ul li {
   align-items: center;
 }
 
+img {
+  width: 100%;
+}
+
 /* =============
     Typography
 ============= */
@@ -457,6 +461,30 @@ header #header {
 /* =============
     Hero
 ============= */
+#hero #hero-body {
+  display: grid;
+  grid-template-columns: 86px auto 86px;
+  grid-template-areas: ". hero-body .";
+}
+#hero #hero-body section {
+  grid-area: hero-body;
+}
+@media (min-width: 768px) {
+  #hero #hero-body section {
+    grid-template-columns: 104px auto 104px;
+  }
+}
+@media (min-width: 992px) {
+  #hero #hero-body section {
+    grid-template-columns: 130px auto 130px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-body section {
+    grid-template-columns: 212px auto 212px;
+  }
+}
+
 /* =============
     Intro
 ============= */
