@@ -1,3 +1,24 @@
 /* =============
     Experiences
 ============= */
+#experiences{
+    display: grid;
+    grid-template-columns: 25px auto 25px;
+    grid-template-areas:". contents .";
+
+    @include md{
+        grid-template-columns: 105px auto 105px;
+    }
+
+    @include lg{
+        grid-template-columns: 250px auto 250px;
+    }
+
+    @include lg{
+        grid-template-columns: 360px auto 360px;
+    }
+
+    div{
+        grid-area: contents;
+    }
+}

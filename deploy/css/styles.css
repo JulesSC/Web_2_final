@@ -589,6 +589,57 @@ header #header {
 /* =============
     Experiences
 ============= */
+#experiences {
+  display: grid;
+  grid-template-columns: 25px auto 25px;
+  grid-template-areas: ". contents .";
+}
+@media (min-width: 768px) {
+  #experiences {
+    grid-template-columns: 105px auto 105px;
+  }
+}
+@media (min-width: 992px) {
+  #experiences {
+    grid-template-columns: 250px auto 250px;
+  }
+}
+@media (min-width: 992px) {
+  #experiences {
+    grid-template-columns: 360px auto 360px;
+  }
+}
+#experiences div {
+  grid-area: contents;
+}
+
 /* =============
     Sign
 ============= */
+#sign {
+  display: grid;
+  grid-template-columns: 6px auto 6px;
+  grid-template-areas: ". contents .";
+}
+@media (min-width: 768px) {
+  #sign {
+    grid-template-columns: 88px auto 88px;
+  }
+}
+@media (min-width: 992px) {
+  #sign {
+    grid-template-columns: 10px auto 10px;
+  }
+}
+@media (min-width: 992px) {
+  #sign {
+    grid-template-columns: 210px auto 210px;
+  }
+}
+#sign div {
+  grid-area: contents;
+}
+#sign div ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
