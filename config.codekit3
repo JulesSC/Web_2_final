@@ -125,6 +125,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/dining\/amangiri_dining.jpg" : {
+      "ft" : 16384,
+      "iS" : 278111,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/dining\/amangiri_dining.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/dining\/left_temp.jpg" : {
       "ft" : 16384,
       "iS" : 164381,
@@ -203,6 +216,14 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/intro\/.intro.jpg.icloud" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/intro\/.intro.jpg.icloud",
+      "oF" : 0
+    },
     "\/deploy\/img\/intro\/intro_temp.jpg" : {
       "ft" : 16384,
       "iS" : 64198,
@@ -216,15 +237,15 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/intro\/intro.jpg" : {
+    "\/deploy\/img\/wellness\/Amangiri_Spa.jpg" : {
       "ft" : 16384,
-      "iS" : 5752505,
+      "iS" : 252124,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/intro\/intro.jpg",
+      "oAP" : "\/deploy\/img\/wellness\/Amangiri_Spa.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75

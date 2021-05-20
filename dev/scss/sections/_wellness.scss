@@ -13,6 +13,22 @@
     #image{
         grid-area: image;
         // height: 350px;
+        background-image: url("../img/wellness/right.jpg");
+        height: 750px;
+        background-size: cover;
+        background-position: center;
+
+        @include md{
+            height: 420px;
+        }
+
+        @include lg{
+            height: 565px;
+        }
+
+        @include xl{
+            height: 795px;
+        }
     }
 
     #contents{
@@ -82,11 +98,24 @@
 
                     #left{
                         text-align: right;
-                        margin-right: 8px;
+
+                        @include md{
+                            margin-right: 6px;
+                        }
+
+                        @include lg{
+                            margin-right: 8px;
+                        }
                     }
 
                     #right{
-                        margin-left: 8px;
+                        @include md{
+                            margin-right: 6px;
+                        }
+
+                        @include lg{
+                            margin-right: 8px;
+                        }
                     }
                 }
             }

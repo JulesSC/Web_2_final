@@ -9,6 +9,25 @@
         grid-template-columns: 50% auto;
     }
 
+    #image{
+        background-image: url("../img/dining/left.jpg");
+        height: 750px;
+        background-size: cover;
+        background-position: center;
+
+        @include md{
+            height: 420px;
+        }
+
+        @include lg{
+            height: 565px;
+        }
+
+        @include xl{
+            height: 795px;
+        }
+    }
+
     #contents{
         display: grid;
         grid-template-columns: 6px auto 6px;
