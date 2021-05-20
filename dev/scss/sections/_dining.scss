@@ -49,6 +49,21 @@
                     width: 260px;
                 }
             }
+
+            #split{
+                @include md{
+                    display: flex;
+
+                    #left{
+                        text-align: right;
+                        margin-right: 8px;
+                    }
+
+                    #right{
+                        margin-left: 8px;
+                    }
+                }
+            }
         }
     }
 }
