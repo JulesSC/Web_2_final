@@ -679,6 +679,56 @@ footer div {
     width: 360px;
   }
 }
+#intro #contents article h3 {
+  font-family: vincente, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 45px;
+}
+@media (min-width: 768px) {
+  #intro #contents article h3 {
+    font-size: 3.75rem;
+    line-height: 55px;
+  }
+}
+@media (min-width: 992px) {
+  #intro #contents article h3 {
+    font-size: 4.5rem;
+    line-height: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  #intro #contents article h3 {
+    font-size: 6.25rem;
+    line-height: 80px;
+  }
+}
+#intro #contents article p {
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 12px;
+}
+@media (min-width: 768px) {
+  #intro #contents article p {
+    font-size: 0.875rem;
+    line-height: 14px;
+  }
+}
+@media (min-width: 992px) {
+  #intro #contents article p {
+    font-size: 1rem;
+    line-height: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  #intro #contents article p {
+    font-size: 1.3125rem;
+    line-height: 18px;
+  }
+}
 
 /* =============
     Accommodation

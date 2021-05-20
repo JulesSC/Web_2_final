@@ -47,5 +47,53 @@
                 width: 360px;
             }
         }
+
+        article{
+            h3{
+                font-family: vincente, serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: rem-calc(48px);
+                line-height: 45px;
+
+                @include md{
+                    font-size: rem-calc(60px);
+                    line-height: 55px;
+                }
+
+                @include lg{
+                    font-size: rem-calc(72px);
+                    line-height: 60px;
+                }
+
+                @include xl{
+                    font-size: rem-calc(100px);
+                    line-height: 80px;
+                }
+            }
+
+            p{
+                font-family: futura-pt, sans-serif;
+                font-weight: 300;
+                font-style: normal;
+                font-size: rem-calc(12px);
+                line-height: 12px;
+
+                @include md{
+                    font-size: rem-calc(14px);
+                    line-height: 14px;
+                }
+
+                @include lg{
+                    font-size: rem-calc(16px);
+                    line-height: 16px;
+                }
+
+                @include xl{
+                    font-size: rem-calc(21px);
+                    line-height: 18px;
+                }
+            }
+        }
     }
 }
