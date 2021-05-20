@@ -5,6 +5,8 @@
     display: grid;
     grid-template-columns: 25px auto 25px;
     grid-template-areas:". contents .";
+    background-color: $black;
+    color: $white;
 
     @include md{
         grid-template-columns: 105px auto 105px;

@@ -42,7 +42,7 @@
       "oAP" : "\/deploy\/img\/accommodation\/four.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -68,7 +68,7 @@
       "oAP" : "\/deploy\/img\/accommodation\/one.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -94,7 +94,7 @@
       "oAP" : "\/deploy\/img\/accommodation\/three.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -120,7 +120,7 @@
       "oAP" : "\/deploy\/img\/accommodation\/two.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -146,7 +146,7 @@
       "oAP" : "\/deploy\/img\/dining\/left.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -172,7 +172,7 @@
       "oAP" : "\/deploy\/img\/dining\/right.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -198,7 +198,7 @@
       "oAP" : "\/deploy\/img\/hero\/hero.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -218,7 +218,7 @@
     },
     "\/deploy\/img\/intro\/intro.jpg" : {
       "ft" : 16384,
-      "iS" : 1445941,
+      "iS" : 5752505,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/intro\/intro.jpg",
@@ -250,7 +250,7 @@
       "oAP" : "\/deploy\/img\/wellness\/left.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -276,7 +276,7 @@
       "oAP" : "\/deploy\/img\/wellness\/right.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75

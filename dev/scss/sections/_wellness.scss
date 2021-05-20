@@ -2,6 +2,8 @@
     Wellness
 ============= */
 #wellness{
+    background-color: $sand;
+
     @include md{
         display: grid;
         grid-template-columns: 50% auto;
@@ -14,7 +16,6 @@
 
     #contents{
         grid-area: body;
-
         display: grid;
         grid-template-columns: 6px auto 6px;
         grid-template-areas:". contents .";
@@ -33,6 +34,26 @@
         
         section{
             grid-area: contents;
+
+            img{
+                height: 125px;
+                width: 125px;
+
+                @include md{
+                    height: 150px;
+                    width: 150px;
+                }
+
+                @include lg{
+                    height: 175px;
+                    width: 175px;
+                }
+
+                @include lg{
+                    height: 260px;
+                    width: 260px;
+                }
+            }
         }
     }
 }

@@ -459,6 +459,7 @@ footer {
   display: grid;
   grid-template-columns: 6px auto 6px;
   grid-template-areas: ". footer .";
+  background-color: #ECE7E2;
 }
 @media (min-width: 768px) {
   footer {
@@ -484,6 +485,29 @@ footer div {
 /* =============
     Hero
 ============= */
+#hero {
+  background-image: url("../img/hero/hero.jpg");
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  #hero {
+    height: 490px;
+    background-position: center top;
+  }
+}
+@media (min-width: 992px) {
+  #hero {
+    height: 660px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero {
+    height: 890px;
+  }
+}
 #hero #hero-body {
   display: grid;
   grid-template-columns: 86px auto 86px;
@@ -521,6 +545,8 @@ footer div {
   display: grid;
   grid-template-columns: 6px auto 6px;
   grid-template-areas: ". contents .";
+  background-color: #000;
+  color: #fff;
 }
 @media (min-width: 768px) {
   #intro {
@@ -540,6 +566,28 @@ footer div {
 #intro #contents {
   grid-area: contents;
 }
+#intro #contents img {
+  height: 130px;
+  width: 118px;
+}
+@media (min-width: 768px) {
+  #intro #contents img {
+    height: 210px;
+    width: 190px;
+  }
+}
+@media (min-width: 992px) {
+  #intro #contents img {
+    height: 282px;
+    width: 256px;
+  }
+}
+@media (min-width: 1200px) {
+  #intro #contents img {
+    height: 400px;
+    width: 360px;
+  }
+}
 
 /* =============
     Accommodation
@@ -548,6 +596,7 @@ footer div {
   display: grid;
   grid-template-columns: 36px auto 36px;
   grid-template-areas: ". contents .";
+  background-color: #ECE7E2;
 }
 @media (min-width: 768px) {
   #accommodation {
@@ -567,16 +616,27 @@ footer div {
 #accommodation div {
   grid-area: contents;
 }
+@media (min-width: 768px) {
+  #accommodation div ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
 @media (min-width: 992px) {
   #accommodation div ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
   }
 }
 
 /* =============
     Wellness
 ============= */
+#wellness {
+  background-color: #ECE7E2;
+}
 @media (min-width: 768px) {
   #wellness {
     display: grid;
@@ -611,10 +671,35 @@ footer div {
 #wellness #contents section {
   grid-area: contents;
 }
+#wellness #contents section img {
+  height: 125px;
+  width: 125px;
+}
+@media (min-width: 768px) {
+  #wellness #contents section img {
+    height: 150px;
+    width: 150px;
+  }
+}
+@media (min-width: 992px) {
+  #wellness #contents section img {
+    height: 175px;
+    width: 175px;
+  }
+}
+@media (min-width: 992px) {
+  #wellness #contents section img {
+    height: 260px;
+    width: 260px;
+  }
+}
 
 /* =============
     Dining
 ============= */
+#dining {
+  background-color: #ECE7E2;
+}
 @media (min-width: 768px) {
   #dining {
     display: grid;
@@ -644,6 +729,28 @@ footer div {
 #dining #contents section {
   grid-area: contents;
 }
+#dining #contents section img {
+  height: 125px;
+  width: 125px;
+}
+@media (min-width: 768px) {
+  #dining #contents section img {
+    height: 150px;
+    width: 150px;
+  }
+}
+@media (min-width: 992px) {
+  #dining #contents section img {
+    height: 175px;
+    width: 175px;
+  }
+}
+@media (min-width: 992px) {
+  #dining #contents section img {
+    height: 260px;
+    width: 260px;
+  }
+}
 
 /* =============
     Experiences
@@ -652,6 +759,8 @@ footer div {
   display: grid;
   grid-template-columns: 25px auto 25px;
   grid-template-areas: ". contents .";
+  background-color: #000;
+  color: #fff;
 }
 @media (min-width: 768px) {
   #experiences {
@@ -679,6 +788,7 @@ footer div {
   display: grid;
   grid-template-columns: 6px auto 6px;
   grid-template-areas: ". contents .";
+  background-color: #ECE7E2;
 }
 @media (min-width: 768px) {
   #sign {

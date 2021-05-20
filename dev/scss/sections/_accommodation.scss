@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: 36px auto 36px;
     grid-template-areas:". contents .";
+    background-color: $sand;
 
     @include md{
         grid-template-columns: 88px auto 88px;
@@ -22,9 +23,16 @@
         grid-area: contents;
 
         ul{
+            @include md{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            
             @include lg{
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
+                gap: 16px;
             }
         }
 

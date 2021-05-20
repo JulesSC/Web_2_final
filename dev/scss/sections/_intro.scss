@@ -5,6 +5,13 @@
     display: grid;
     grid-template-columns: 6px auto 6px;
     grid-template-areas:". contents .";
+    background-color: $black;
+    color: $white;
+    // background-image: url("../img/intro/intro.jpg");
+    // height: 210px;
+    // width: 190;
+    // background-size: cover;
+    // background-position: center;
 
     @include md{
         grid-template-columns: 200px auto 200px;
@@ -20,5 +27,25 @@
 
     #contents{
         grid-area: contents;
+
+        img{
+            height: 130px;
+            width: 118px;
+
+            @include md{
+                height: 210px;
+                width: 190px;
+            }
+
+            @include lg{
+                height: 282px;
+                width: 256px;
+            }
+
+            @include xl{
+                height: 400px;
+                width: 360px;
+            }
+        }
     }
 }
