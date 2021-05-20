@@ -1,24 +1,73 @@
-footer{
+footer {
     display: grid;
     grid-template-columns: 6px auto 6px;
-    grid-template-areas:". footer .";
+    grid-template-areas: ". footer .";
     background-color: $sand;
 
-    @include md{
+    @include md {
         grid-template-columns: 88px auto 88px;
     }
 
-    @include lg{
+    @include lg {
         grid-template-columns: 10px auto 10px;
     }
 
-    @include lg{
+    @include lg {
         grid-template-columns: 210px auto 210px;
     }
 
-    div{
+    div {
+        border-top: 1px $black solid;
         grid-area: footer;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+
+        h4{
+            font-family: vincente, serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: rem-calc(21px);
+            text-align: center;
+
+            @include md{
+                font-size: rem-calc(36px);
+            }
+
+            @include lg{
+                font-size: rem-calc(48px);
+                line-height: 120px;
+            }
+
+            @include xl{
+                font-size: rem-calc(60px);
+                line-height: 175px;
+                font-weight: 300;
+            }
+        }
+
+        ul {
+            li {
+                font-family: futura-pt, sans-serif;
+                font-weight: 300;
+                font-style: normal;
+                font-size: rem-calc(12px);
+
+                @include md {
+                    font-size: rem-calc(14px);
+                }
+
+                @include lg {
+                    font-size: rem-calc(16px);
+                }
+
+                @include xl {
+                    font-size: rem-calc(18px);
+                }
+            }
+        }
+
+        #right {
+            text-align: right;
+        }
     }
 }
