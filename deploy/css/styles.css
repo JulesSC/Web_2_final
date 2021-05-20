@@ -716,6 +716,7 @@ footer div {
   font-style: normal;
   font-size: 3rem;
   line-height: 45px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #intro #contents article h3 {
@@ -741,6 +742,7 @@ footer div {
   font-style: normal;
   font-size: 0.75rem;
   line-height: 12px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #intro #contents article p {
@@ -868,7 +870,7 @@ footer div {
 #wellness #image {
   grid-area: image;
   background-image: url("../img/wellness/right.jpg");
-  height: 750px;
+  height: 350px;
   background-size: cover;
   background-position: center;
 }
@@ -916,6 +918,7 @@ footer div {
   font-weight: 400;
   font-style: normal;
   font-size: 2.25rem;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #wellness #contents section h4 {
@@ -997,7 +1000,7 @@ footer div {
 }
 #dining #image {
   background-image: url("../img/dining/left.jpg");
-  height: 750px;
+  height: 350px;
   background-size: cover;
   background-position: center;
 }
@@ -1038,6 +1041,28 @@ footer div {
 }
 #dining #contents section {
   grid-area: contents;
+}
+#dining #contents section h4 {
+  font-family: vincente, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.25rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #dining #contents section h4 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  #dining #contents section h4 {
+    font-size: 3.75rem;
+  }
+}
+@media (min-width: 1200px) {
+  #dining #contents section h4 {
+    font-size: 4.5rem;
+  }
 }
 #dining #contents section img {
   height: 125px;
@@ -1102,6 +1127,31 @@ footer div {
 }
 #experiences div {
   grid-area: contents;
+}
+#experiences div h4 {
+  font-family: vincente, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.25rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #experiences div h4 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  #experiences div h4 {
+    font-size: 3.75rem;
+  }
+}
+@media (min-width: 1200px) {
+  #experiences div h4 {
+    font-size: 4.5rem;
+  }
+}
+#experiences div p {
+  text-align: center;
 }
 
 /* =============

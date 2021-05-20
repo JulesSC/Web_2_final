@@ -55,6 +55,7 @@
                 font-style: normal;
                 font-size: rem-calc(48px);
                 line-height: 45px;
+                text-align: center;
 
                 @include md{
                     font-size: rem-calc(60px);
@@ -78,6 +79,7 @@
                 font-style: normal;
                 font-size: rem-calc(12px);
                 line-height: 12px;
+                text-align: center;
 
                 @include md{
                     font-size: rem-calc(14px);
