@@ -622,7 +622,6 @@ footer div {
   font-weight: 300;
   font-style: normal;
   font-size: 1.3125rem;
-  color: #fff;
   border: none;
 }
 @media (min-width: 768px) {
@@ -1181,9 +1180,100 @@ footer div {
 #sign div {
   grid-area: contents;
 }
+#sign div h2 {
+  font-family: vincente, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 52px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #sign div h2 {
+    font-size: 4.5rem;
+    line-height: 70px;
+  }
+}
+@media (min-width: 992px) {
+  #sign div h2 {
+    font-size: 6.875rem;
+    line-height: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  #sign div h2 {
+    font-size: 9.375rem;
+    line-height: 120px;
+    font-weight: 300;
+  }
+}
 @media (min-width: 768px) {
   #sign div ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+#sign div ul li {
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.75rem;
+}
+@media (min-width: 768px) {
+  #sign div ul li {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 992px) {
+  #sign div ul li {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  #sign div ul li {
+    font-size: 1.125rem;
+  }
+}
+#sign div ul li input {
+  background-color: transparent;
+  color: #000;
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.3125rem;
+  border: none;
+}
+@media (min-width: 768px) {
+  #sign div ul li input {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #sign div ul li input {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 1200px) {
+  #sign div ul li input {
+    font-size: 3rem;
+  }
+}
+#sign div button {
+  border: 1px #000 solid;
+  background-color: transparent;
+  color: #000;
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.625rem;
+}
+@media (min-width: 768px) {
+  #sign div button {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 992px) {
+  #sign div button {
+    font-size: 0.875rem;
   }
 }
