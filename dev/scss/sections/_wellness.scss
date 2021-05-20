@@ -38,6 +38,7 @@
             img{
                 height: 125px;
                 width: 125px;
+                display: block;
 
                 @include md{
                     height: 150px;

@@ -40,11 +40,95 @@
             @include xl{
                 grid-template-columns: 212px auto 212px;
             }
+            
+            h1{
+                font-family: vincente, serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: rem-calc(60px);
+                line-height: 55px;
 
+                @include md{
+                    font-size: rem-calc(100px);
+                    line-height: 85px;
+                }
+
+                @include lg{
+                    font-size: rem-calc(140px);
+                    line-height: 120px;
+                }
+
+                @include xl{
+                    font-size: rem-calc(200px);
+                    line-height: 175px;
+                    font-weight: 300;
+                }
+            }
+            
             ul{
                 @include md{
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
+                }
+
+                li{
+                    font-family: futura-pt, sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-size: rem-calc(12px);
+
+                    @include md{
+                        font-size: rem-calc(14px);
+                    }
+    
+                    @include lg{
+                        font-size: rem-calc(16px);
+                    }
+    
+                    @include xl{
+                        font-size: rem-calc(18px);
+                    }
+
+                    input{
+                        background-color: transparent;
+                        color: $white;
+                        font-family: futura-pt, sans-serif;
+                        font-weight: 300;
+                        font-style: normal;
+                        font-size: rem-calc(21px);
+                        color: $white;
+                        border: none;
+
+                        @include md{
+                            font-size: rem-calc(24px);
+                        }
+        
+                        @include lg{
+                            font-size: rem-calc(36px);
+                        }
+        
+                        @include xl{
+                            font-size: rem-calc(48px);
+                        }
+                    }
+                }
+            }
+
+            button{
+                border: 1px $white solid;
+                background-color: transparent;
+                color: $white;
+                font-family: futura-pt, sans-serif;
+                font-weight: 300;
+                font-style: normal;
+                font-size: rem-calc(10px);
+
+                @include md{
+                    font-size: rem-calc(12px);
+                }
+
+                @include lg{
+                    font-size: rem-calc(14px);
                 }
             }
         }
