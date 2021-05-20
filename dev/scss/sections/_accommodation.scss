@@ -28,12 +28,12 @@
             }
         }
 
-        i{
-            display: none;
+        // i{
+        //     display: none;
 
-            @include lg{
-                display: list-item;
-            }
-        }
+        //     @include lg{
+        //         display: list-item;
+        //     }
+        // }
     }
 }
