@@ -12,21 +12,17 @@
 
     #image{
         grid-area: image;
-        background-image: url("../img/wellness/right.jpg");
-        height: 350px;
-        background-size: cover;
-        background-position: center;
+
+        img{
+            @include md{
+                display: none;
+            }
+        }
 
         @include md{
-            height: 420px;
-        }
-
-        @include lg{
-            height: 565px;
-        }
-
-        @include xl{
-            height: 795px;
+            background-image: url("../img/wellness/right.jpg");
+            background-size: cover;
+            background-position: center;
         }
     }
 
@@ -39,14 +35,17 @@
 
         @include md{
             grid-template-columns: 32px auto 32px;
+            padding: 20px 25px;
         }
 
         @include lg{
             grid-template-columns: 75px auto 75px;
+            padding: 40px 25px;
         }
 
         @include xl{
             grid-template-columns: 155px auto 155px;
+            padding: 68px 25px;
         }
         
         section{
@@ -86,23 +85,26 @@
                     @include md{
                         height: 150px;
                         width: 150px;
+                        margin: 20px 0px;
                     }
     
                     @include lg{
                         height: 175px;
                         width: 175px;
+                        margin: 35px 0px;
                     }
     
                     @include lg{
                         height: 260px;
                         width: 260px;
+                        margin: 50px 0px;
                     }
                 }
             }
 
             #split{
                 text-align: center;
-                
+
                 #left{
                     margin-bottom: 15px;
                 }
@@ -114,7 +116,7 @@
                         text-align: right;
 
                         @include md{
-                            margin-right: 6px;
+                            margin-right: 8px;
                         }
 
                         @include lg{
@@ -123,8 +125,10 @@
                     }
 
                     #right{
+                        text-align: left;
+
                         @include md{
-                            margin-right: 6px;
+                            margin-right: 8px;
                         }
 
                         @include lg{
