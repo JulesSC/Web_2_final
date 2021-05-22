@@ -950,15 +950,13 @@ footer div #right {
   grid-area: image;
 }
 @media (min-width: 768px) {
-  #wellness #image img {
-    display: none;
-  }
-}
-@media (min-width: 768px) {
   #wellness #image {
     background-image: url("../img/wellness/right.jpg");
     background-size: cover;
     background-position: center;
+  }
+  #wellness #image img {
+    display: none;
   }
 }
 #wellness #contents {
@@ -966,24 +964,24 @@ footer div #right {
   display: grid;
   grid-template-columns: 6px auto 6px;
   grid-template-areas: ". contents .";
-  padding: 50px 25px;
+  padding: 50px 20px;
 }
 @media (min-width: 768px) {
   #wellness #contents {
     grid-template-columns: 32px auto 32px;
-    padding: 20px 25px;
+    padding: 20px 0px;
   }
 }
 @media (min-width: 992px) {
   #wellness #contents {
     grid-template-columns: 75px auto 75px;
-    padding: 40px 25px;
+    padding: 40px 0px;
   }
 }
 @media (min-width: 1200px) {
   #wellness #contents {
     grid-template-columns: 155px auto 155px;
-    padding: 68px 25px;
+    padding: 68px 0px;
   }
 }
 #wellness #contents section {
@@ -1060,11 +1058,6 @@ footer div #right {
     margin-right: 8px;
   }
 }
-@media (min-width: 768px) and (min-width: 992px) {
-  #wellness #contents section #split #left {
-    margin-right: 8px;
-  }
-}
 @media (min-width: 768px) {
   #wellness #contents section #split #right {
     text-align: left;
@@ -1072,12 +1065,7 @@ footer div #right {
 }
 @media (min-width: 768px) and (min-width: 768px) {
   #wellness #contents section #split #right {
-    margin-right: 8px;
-  }
-}
-@media (min-width: 768px) and (min-width: 992px) {
-  #wellness #contents section #split #right {
-    margin-right: 8px;
+    margin-left: 8px;
   }
 }
 
@@ -1093,45 +1081,38 @@ footer div #right {
     grid-template-columns: 50% auto;
   }
 }
-#dining #image {
-  background-image: url("../img/dining/left.jpg");
-  height: 350px;
-  background-size: cover;
-  background-position: center;
-}
 @media (min-width: 768px) {
   #dining #image {
-    height: 420px;
+    background-image: url("../img/dining/left.jpg");
+    background-size: cover;
+    background-position: center;
   }
-}
-@media (min-width: 992px) {
-  #dining #image {
-    height: 565px;
-  }
-}
-@media (min-width: 1200px) {
-  #dining #image {
-    height: 795px;
+  #dining #image img {
+    display: none;
   }
 }
 #dining #contents {
   display: grid;
   grid-template-columns: 6px auto 6px;
   grid-template-areas: ". contents .";
+  padding: 50px 20px;
 }
 @media (min-width: 768px) {
   #dining #contents {
     grid-template-columns: 32px auto 32px;
+    padding: 20px 0px;
   }
 }
 @media (min-width: 992px) {
   #dining #contents {
     grid-template-columns: 75px auto 75px;
+    padding: 40px 0px;
   }
 }
 @media (min-width: 1200px) {
   #dining #contents {
     grid-template-columns: 155px auto 155px;
+    padding: 58px 0px;
   }
 }
 #dining #contents section {
@@ -1159,28 +1140,41 @@ footer div #right {
     font-size: 4.5rem;
   }
 }
-#dining #contents section img {
+#dining #contents section #smallImage {
+  display: flex;
+  justify-content: center;
+}
+#dining #contents section #smallImage img {
   height: 125px;
   width: 125px;
-  display: block;
+  margin: 30px 0px;
 }
 @media (min-width: 768px) {
-  #dining #contents section img {
+  #dining #contents section #smallImage img {
     height: 150px;
     width: 150px;
+    margin: 20px 0px;
   }
 }
 @media (min-width: 992px) {
-  #dining #contents section img {
+  #dining #contents section #smallImage img {
     height: 175px;
     width: 175px;
+    margin: 35px 0px;
   }
 }
 @media (min-width: 992px) {
-  #dining #contents section img {
+  #dining #contents section #smallImage img {
     height: 260px;
     width: 260px;
+    margin: 50px 0px;
   }
+}
+#dining #contents section #split {
+  text-align: center;
+}
+#dining #contents section #split #left {
+  margin-bottom: 15px;
 }
 @media (min-width: 768px) {
   #dining #contents section #split {
@@ -1188,8 +1182,19 @@ footer div #right {
   }
   #dining #contents section #split #left {
     text-align: right;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  #dining #contents section #split #left {
     margin-right: 8px;
   }
+}
+@media (min-width: 768px) {
+  #dining #contents section #split #right {
+    text-align: left;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
   #dining #contents section #split #right {
     margin-left: 8px;
   }

@@ -13,16 +13,14 @@
     #image{
         grid-area: image;
 
-        img{
-            @include md{
-                display: none;
-            }
-        }
-
         @include md{
             background-image: url("../img/wellness/right.jpg");
             background-size: cover;
             background-position: center;
+            
+            img{
+                display: none;
+            }
         }
     }
 
@@ -31,27 +29,25 @@
         display: grid;
         grid-template-columns: 6px auto 6px;
         grid-template-areas:". contents .";
-        padding: 50px 25px;
+        padding: 50px 20px;
 
         @include md{
             grid-template-columns: 32px auto 32px;
-            padding: 20px 25px;
+            padding: 20px 0px;
         }
 
         @include lg{
             grid-template-columns: 75px auto 75px;
-            padding: 40px 25px;
+            padding: 40px 0px;
         }
 
         @include xl{
             grid-template-columns: 155px auto 155px;
-            padding: 68px 25px;
+            padding: 68px 0px;
         }
         
         section{
             grid-area: contents;
-            // display: flex;
-            // justify-content: center;
 
             h4{
                 font-family: vincente, serif;
@@ -118,21 +114,13 @@
                         @include md{
                             margin-right: 8px;
                         }
-
-                        @include lg{
-                            margin-right: 8px;
-                        }
                     }
 
                     #right{
                         text-align: left;
 
                         @include md{
-                            margin-right: 8px;
-                        }
-
-                        @include lg{
-                            margin-right: 8px;
+                            margin-left: 8px;
                         }
                     }
                 }

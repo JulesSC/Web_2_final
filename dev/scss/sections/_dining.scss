@@ -10,21 +10,14 @@
     }
 
     #image{
-        background-image: url("../img/dining/left.jpg");
-        height: 350px;
-        background-size: cover;
-        background-position: center;
-
         @include md{
-            height: 420px;
-        }
+            background-image: url("../img/dining/left.jpg");
+            background-size: cover;
+            background-position: center;
 
-        @include lg{
-            height: 565px;
-        }
-
-        @include xl{
-            height: 795px;
+            img{
+             display: none;
+            }
         }
     }
 
@@ -32,17 +25,21 @@
         display: grid;
         grid-template-columns: 6px auto 6px;
         grid-template-areas:". contents .";
+        padding: 50px 20px;
 
         @include md{
             grid-template-columns: 32px auto 32px;
+            padding: 20px 0px;
         }
 
         @include lg{
             grid-template-columns: 75px auto 75px;
+            padding: 40px 0px;
         }
 
         @include xl{
             grid-template-columns: 155px auto 155px;
+            padding: 58px 0px;
         }
         
         section{
@@ -68,38 +65,59 @@
                 }
             }
 
-            img{
-                height: 125px;
-                width: 125px;
-                display: block;
-
-                @include md{
-                    height: 150px;
-                    width: 150px;
-                }
-
-                @include lg{
-                    height: 175px;
-                    width: 175px;
-                }
-
-                @include lg{
-                    height: 260px;
-                    width: 260px;
+            #smallImage{
+                display: flex;
+                justify-content: center;
+                
+                img{
+                    height: 125px;
+                    width: 125px;
+                    margin: 30px 0px;
+    
+                    @include md{
+                        height: 150px;
+                        width: 150px;
+                        margin: 20px 0px;
+                    }
+    
+                    @include lg{
+                        height: 175px;
+                        width: 175px;
+                        margin: 35px 0px;
+                    }
+    
+                    @include lg{
+                        height: 260px;
+                        width: 260px;
+                        margin: 50px 0px;
+                    }
                 }
             }
 
             #split{
+                text-align: center;
+
+                #left{
+                    margin-bottom: 15px;
+                }
+
                 @include md{
                     display: flex;
 
                     #left{
                         text-align: right;
-                        margin-right: 8px;
+
+                        @include md{
+                            margin-right: 8px;
+                        }
                     }
 
                     #right{
-                        margin-left: 8px;
+                        text-align: left;
+
+                        @include md{
+                            margin-left: 8px;
+                        }
                     }
                 }
             }
