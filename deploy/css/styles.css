@@ -1209,20 +1209,24 @@ footer div #right {
   grid-template-areas: ". contents .";
   background-color: #000;
   color: #fff;
+  padding: 100px 0px;
 }
 @media (min-width: 768px) {
   #experiences {
     grid-template-columns: 105px auto 105px;
+    padding: 100px 0px;
   }
 }
 @media (min-width: 992px) {
   #experiences {
     grid-template-columns: 250px auto 250px;
+    padding: 160px 0px;
   }
 }
 @media (min-width: 992px) {
   #experiences {
     grid-template-columns: 360px auto 360px;
+    padding: 280px 0px;
   }
 }
 #experiences div {
@@ -1234,24 +1238,36 @@ footer div #right {
   font-style: normal;
   font-size: 2.25rem;
   text-align: center;
+  margin-bottom: 25px;
 }
 @media (min-width: 768px) {
   #experiences div h4 {
     font-size: 3rem;
+    margin-bottom: 32px;
   }
 }
 @media (min-width: 992px) {
   #experiences div h4 {
     font-size: 3.75rem;
+    margin-bottom: 40px;
   }
 }
 @media (min-width: 1200px) {
   #experiences div h4 {
     font-size: 4.5rem;
+    margin-bottom: 45px;
   }
 }
 #experiences div p {
   text-align: center;
+}
+#experiences div #bottom {
+  margin-top: 12px;
+}
+@media (min-width: 768px) {
+  #experiences div #bottom {
+    margin-top: 20px;
+  }
 }
 
 /* =============
