@@ -973,6 +973,7 @@ footer div #right {
   display: grid;
   grid-template-columns: 6px auto 6px;
   grid-template-areas: ". contents .";
+  padding: 50px 25px;
 }
 @media (min-width: 768px) {
   #wellness #contents {
@@ -1014,27 +1015,38 @@ footer div #right {
     font-size: 4.5rem;
   }
 }
-#wellness #contents section img {
+#wellness #contents section #smallImage {
+  display: flex;
+  justify-content: center;
+}
+#wellness #contents section #smallImage img {
   height: 125px;
   width: 125px;
+  margin: 30px 0px;
 }
 @media (min-width: 768px) {
-  #wellness #contents section img {
+  #wellness #contents section #smallImage img {
     height: 150px;
     width: 150px;
   }
 }
 @media (min-width: 992px) {
-  #wellness #contents section img {
+  #wellness #contents section #smallImage img {
     height: 175px;
     width: 175px;
   }
 }
 @media (min-width: 992px) {
-  #wellness #contents section img {
+  #wellness #contents section #smallImage img {
     height: 260px;
     width: 260px;
   }
+}
+#wellness #contents section #split {
+  text-align: center;
+}
+#wellness #contents section #split #left {
+  margin-bottom: 15px;
 }
 @media (min-width: 768px) {
   #wellness #contents section #split {

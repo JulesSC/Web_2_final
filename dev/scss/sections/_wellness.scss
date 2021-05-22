@@ -35,6 +35,7 @@
         display: grid;
         grid-template-columns: 6px auto 6px;
         grid-template-areas:". contents .";
+        padding: 50px 25px;
 
         @include md{
             grid-template-columns: 32px auto 32px;
@@ -50,6 +51,8 @@
         
         section{
             grid-area: contents;
+            // display: flex;
+            // justify-content: center;
 
             h4{
                 font-family: vincente, serif;
@@ -71,28 +74,39 @@
                 }
             }
 
-            img{
-                height: 125px;
-                width: 125px;
-                // display: block;
+            #smallImage{
+                display: flex;
+                justify-content: center;
 
-                @include md{
-                    height: 150px;
-                    width: 150px;
-                }
-
-                @include lg{
-                    height: 175px;
-                    width: 175px;
-                }
-
-                @include lg{
-                    height: 260px;
-                    width: 260px;
+                img{
+                    height: 125px;
+                    width: 125px;
+                    margin: 30px 0px;
+    
+                    @include md{
+                        height: 150px;
+                        width: 150px;
+                    }
+    
+                    @include lg{
+                        height: 175px;
+                        width: 175px;
+                    }
+    
+                    @include lg{
+                        height: 260px;
+                        width: 260px;
+                    }
                 }
             }
 
             #split{
+                text-align: center;
+                
+                #left{
+                    margin-bottom: 15px;
+                }
+                
                 @include md{
                     display: flex;
 
