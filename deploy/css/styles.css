@@ -495,55 +495,35 @@ header #header ul {
 }
 
 footer {
-  display: grid;
-  grid-template-columns: 6px auto 6px;
-  grid-template-areas: ". footer .";
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #ECE7E2;
 }
-@media (min-width: 768px) {
-  footer {
-    grid-template-columns: 8px auto 8px;
-  }
-}
-@media (min-width: 992px) {
-  footer {
-    grid-template-columns: 10px auto 10px;
-  }
-}
-@media (min-width: 1200px) {
-  footer {
-    grid-template-columns: 58px auto 58px;
-  }
-}
 footer div {
+  margin: 0px 6px;
   border-top: 1px #000 solid;
   grid-area: footer;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
-footer div h4 {
-  font-family: vincente, serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.3125rem;
-  text-align: center;
+  padding: 15px 0px;
 }
 @media (min-width: 768px) {
-  footer div h4 {
-    font-size: 2.25rem;
+  footer div {
+    margin: 0px 8px;
+    padding: 26px 0px;
   }
 }
 @media (min-width: 992px) {
-  footer div h4 {
-    font-size: 3rem;
-    line-height: 120px;
+  footer div {
+    margin: 0px 10px;
+    padding: 38px 0px;
   }
 }
 @media (min-width: 1200px) {
-  footer div h4 {
-    font-size: 3.75rem;
-    line-height: 175px;
-    font-weight: 300;
+  footer div {
+    margin: 0px 58px;
+    padding: 54px 0px;
   }
 }
 footer div ul li {
@@ -567,8 +547,115 @@ footer div ul li {
     font-size: 1.125rem;
   }
 }
+footer div #left ul li a:link,
+footer div #left ul li a:visited {
+  color: #000;
+  transition: 0.25s;
+}
+footer div #left ul li a:link:hover, footer div #left ul li a:link:active,
+footer div #left ul li a:visited:hover,
+footer div #left ul li a:visited:active {
+  color: #fff;
+}
+footer div #left ul li #address {
+  display: none;
+}
+@media (min-width: 768px) {
+  footer div #left ul li #address {
+    display: list-item;
+  }
+}
+footer div #middle h4 {
+  font-family: vincente, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3125rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer div #middle h4 {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 992px) {
+  footer div #middle h4 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  footer div #middle h4 {
+    font-size: 3.75rem;
+    font-weight: 300;
+  }
+}
+footer div #middle ul {
+  display: flex;
+  justify-content: center;
+}
+footer div #middle ul li {
+  margin: 0px 5px;
+}
+@media (min-width: 768px) {
+  footer div #middle ul li {
+    margin: 0px 10px;
+  }
+}
+@media (min-width: 992px) {
+  footer div #middle ul li {
+    margin: 0px 12px;
+  }
+}
+footer div #middle ul li a:link,
+footer div #middle ul li a:visited {
+  color: #000;
+  transition: 0.25s;
+}
+footer div #middle ul li a:link:hover, footer div #middle ul li a:link:active,
+footer div #middle ul li a:visited:hover,
+footer div #middle ul li a:visited:active {
+  color: #fff;
+}
+footer div #middle ul li i {
+  font-size: 0.625rem;
+}
+@media (min-width: 768px) {
+  footer div #middle ul li i {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 992px) {
+  footer div #middle ul li i {
+    font-size: 1.375rem;
+  }
+}
 footer div #right {
   text-align: right;
+}
+footer div #right ul li a:link,
+footer div #right ul li a:visited {
+  color: #000;
+  transition: 0.25s;
+}
+footer div #right ul li a:link:hover, footer div #right ul li a:link:active,
+footer div #right ul li a:visited:hover,
+footer div #right ul li a:visited:active {
+  color: #fff;
+}
+footer div #right ul #exclusive {
+  display: none;
+}
+@media (min-width: 768px) {
+  footer div #right ul #exclusive {
+    display: list-item;
+  }
+}
+footer div #right ul #locations {
+  display: none;
+}
+@media (min-width: 768px) {
+  footer div #right ul #locations {
+    display: list-item;
+  }
 }
 
 /* =============
@@ -576,7 +663,7 @@ footer div #right {
 ============= */
 #hero {
   background-image: url("../img/hero/hero.jpg");
-  height: 450px;
+  height: 415px;
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -585,21 +672,21 @@ footer div #right {
 }
 @media (min-width: 768px) {
   #hero {
-    height: 490px;
+    height: 430px;
     background-position: center top;
     margin-top: -62px;
   }
 }
 @media (min-width: 992px) {
   #hero {
-    height: 660px;
+    height: 570px;
     padding: 106px 0px 66px 0px;
     margin-top: -90px;
   }
 }
 @media (min-width: 1200px) {
   #hero {
-    height: 890px;
+    height: 796px;
     padding: 120px 0px 114px 0px;
   }
 }

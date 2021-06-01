@@ -211,7 +211,7 @@
       "oAP" : "\/deploy\/img\/hero\/hero.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -237,7 +237,7 @@
       "oAP" : "\/deploy\/img\/intro\/intro.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75

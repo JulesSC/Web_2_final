@@ -3,7 +3,7 @@
 ============= */
 #hero{
     background-image: url("../img/hero/hero.jpg");
-    height: 450px;
+    height: 415px;
     background-size: cover;
     background-position: center;
     color: $white;
@@ -11,19 +11,19 @@
     margin-top: -38px;
 
     @include md{
-        height: 490px;
+        height: 430px;
         background-position: center top;
         margin-top: -62px;
     }
 
     @include lg{
-        height: 660px;
+        height: 570px;
         padding: 106px 0px 66px 0px;
         margin-top: -90px;
     }
 
     @include xl{
-        height: 890px;
+        height: 796px;
         padding: 120px 0px 114px 0px;
     }
 
