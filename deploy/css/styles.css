@@ -717,50 +717,42 @@ footer div #right {
 ============= */
 #intro {
   display: grid;
-  grid-template-columns: 6px auto 6px;
+  grid-template-columns: 40px auto 40px;
   grid-template-areas: ". contents .";
   background-color: #000;
   color: #fff;
+  background-image: url("../img/intro/intro.jpg");
+  height: 425px;
+  background-size: 118px 130px;
+  background-position: center 108px;
+  background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   #intro {
     grid-template-columns: 200px auto 200px;
+    background-size: 190px 210px;
+    height: 430px;
+    background-position: center 60px;
   }
 }
 @media (min-width: 992px) {
   #intro {
     grid-template-columns: 250px auto 250px;
+    background-size: 255px 280px;
+    height: 565px;
+    background-position: center 95px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #intro {
     grid-template-columns: 360px auto 360px;
+    background-size: 360px 400px;
+    height: 795px;
+    background-position: center 133px;
   }
 }
 #intro #contents {
   grid-area: contents;
-}
-#intro #contents img {
-  height: 130px;
-  width: 118px;
-}
-@media (min-width: 768px) {
-  #intro #contents img {
-    height: 210px;
-    width: 190px;
-  }
-}
-@media (min-width: 992px) {
-  #intro #contents img {
-    height: 282px;
-    width: 256px;
-  }
-}
-@media (min-width: 1200px) {
-  #intro #contents img {
-    height: 400px;
-    width: 360px;
-  }
 }
 #intro #contents article h3 {
   font-family: vincente, serif;
@@ -769,23 +761,27 @@ footer div #right {
   font-size: 3rem;
   line-height: 45px;
   text-align: center;
+  margin: 130px 0px 50px 0px;
 }
 @media (min-width: 768px) {
   #intro #contents article h3 {
     font-size: 3.75rem;
     line-height: 55px;
+    margin: 115px 0px 88px 0px;
   }
 }
 @media (min-width: 992px) {
   #intro #contents article h3 {
     font-size: 4.5rem;
     line-height: 60px;
+    margin: 175px 0px 125px 0px;
   }
 }
 @media (min-width: 1200px) {
   #intro #contents article h3 {
     font-size: 6.25rem;
     line-height: 80px;
+    margin: 260px 0px 170px 0px;
   }
 }
 #intro #contents article p {

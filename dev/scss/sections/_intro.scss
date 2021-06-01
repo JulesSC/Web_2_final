@@ -3,50 +3,39 @@
 ============= */
 #intro{
     display: grid;
-    grid-template-columns: 6px auto 6px;
+    grid-template-columns: 40px auto 40px;
     grid-template-areas:". contents .";
     background-color: $black;
     color: $white;
-    // background-image: url("../img/intro/intro.jpg");
-    // height: 210px;
-    // width: 190;
-    // background-size: cover;
-    // background-position: center;
+    background-image: url("../img/intro/intro.jpg");
+    height: 425px;
+    background-size: 118px 130px;
+    background-position: center 108px;
+    background-repeat: no-repeat;
 
     @include md{
         grid-template-columns: 200px auto 200px;
+        background-size: 190px 210px;
+        height: 430px;
+        background-position: center 60px;
     }
 
     @include lg{
         grid-template-columns: 250px auto 250px;
+        background-size: 255px 280px;
+        height: 565px;
+        background-position: center 95px;
     }
 
-    @include lg{
+    @include xl{
         grid-template-columns: 360px auto 360px;
+        background-size: 360px 400px;
+        height: 795px;
+        background-position: center 133px;
     }
 
     #contents{
         grid-area: contents;
-
-        img{
-            height: 130px;
-            width: 118px;
-
-            @include md{
-                height: 210px;
-                width: 190px;
-            }
-
-            @include lg{
-                height: 282px;
-                width: 256px;
-            }
-
-            @include xl{
-                height: 400px;
-                width: 360px;
-            }
-        }
 
         article{
             h3{
@@ -56,20 +45,24 @@
                 font-size: rem-calc(48px);
                 line-height: 45px;
                 text-align: center;
+                margin: 130px 0px 50px 0px;
 
                 @include md{
                     font-size: rem-calc(60px);
                     line-height: 55px;
+                    margin: 115px 0px 88px 0px;
                 }
 
                 @include lg{
                     font-size: rem-calc(72px);
                     line-height: 60px;
+                    margin: 175px 0px 125px 0px;
                 }
 
                 @include xl{
                     font-size: rem-calc(100px);
                     line-height: 80px;
+                    margin: 260px 0px 170px 0px;
                 }
             }
 
