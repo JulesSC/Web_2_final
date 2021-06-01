@@ -806,6 +806,7 @@ footer div #right ul #locations {
   font-weight: 300;
   font-style: normal;
   font-size: 1.3125rem;
+  outline: none;
   border: none;
   text-align: center;
   margin-bottom: 20px;
@@ -825,6 +826,23 @@ footer div #right ul #locations {
   #hero #hero-body section ul li input {
     font-size: 3rem;
   }
+}
+#hero #hero-body section ul li input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  /* Firefox */
+  opacity: 1;
+  font-variation-settings: "wght" 300;
+}
+#hero #hero-body section ul li input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+  font-variation-settings: "wght" 300;
+}
+#hero #hero-body section ul li input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff;
+  font-variation-settings: "wght" 300;
 }
 #hero #hero-body section #button {
   display: flex;
@@ -1523,6 +1541,7 @@ footer div #right ul #locations {
   font-weight: 300;
   font-style: normal;
   font-size: 1.3125rem;
+  outline: none;
   border: none;
   text-align: center;
 }
@@ -1540,6 +1559,23 @@ footer div #right ul #locations {
   #sign div ul li input {
     font-size: 3rem;
   }
+}
+#sign div ul li input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #000;
+  /* Firefox */
+  opacity: 1;
+  font-variation-settings: "wght" 300;
+}
+#sign div ul li input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #000;
+  font-variation-settings: "wght" 300;
+}
+#sign div ul li input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #000;
+  font-variation-settings: "wght" 300;
 }
 #sign div #button {
   display: flex;

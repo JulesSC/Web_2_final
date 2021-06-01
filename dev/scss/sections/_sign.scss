@@ -96,6 +96,7 @@
                     font-weight: 300;
                     font-style: normal;
                     font-size: rem-calc(21px);
+                    outline: none;
                     border: none;
                     text-align: center;
 
@@ -109,6 +110,24 @@
     
                     @include xl{
                         font-size: rem-calc(48px);
+                    }
+
+                    &::placeholder {
+                        /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        color: $black;
+                        /* Firefox */
+                        opacity: 1;
+                        font-variation-settings: "wght"300;
+                    }
+                    &:-ms-input-placeholder {
+                        /* Internet Explorer 10-11 */
+                        color: $black;
+                        font-variation-settings: "wght"300;
+                    }
+                    &::-ms-input-placeholder {
+                        /* Microsoft Edge */
+                        color: $black;
+                        font-variation-settings: "wght"300;
                     }
                 }
             }
