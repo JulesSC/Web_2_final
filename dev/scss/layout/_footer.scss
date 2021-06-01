@@ -61,15 +61,15 @@ footer {
                             color: $white;
                         }
                     }
+                }
 
-                    #address{
-                        display: none;
-                    
-                        @include md {
-                            display: list-item;
-                        }
-        
+                #address{
+                    display: none;
+                
+                    @include md {
+                        display: list-item;
                     }
+    
                 }
             }
         }

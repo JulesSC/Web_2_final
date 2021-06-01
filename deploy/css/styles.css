@@ -561,11 +561,11 @@ footer div #left ul li a:visited:hover,
 footer div #left ul li a:visited:active {
   color: #fff;
 }
-footer div #left ul li #address {
+footer div #left ul #address {
   display: none;
 }
 @media (min-width: 768px) {
-  footer div #left ul li #address {
+  footer div #left ul #address {
     display: list-item;
   }
 }
