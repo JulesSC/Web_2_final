@@ -5,15 +5,15 @@ footer {
     background-color: $sand;
 
     @include md {
-        grid-template-columns: 88px auto 88px;
+        grid-template-columns: 8px auto 8px;
     }
 
     @include lg {
         grid-template-columns: 10px auto 10px;
     }
 
-    @include lg {
-        grid-template-columns: 210px auto 210px;
+    @include xl {
+        grid-template-columns: 58px auto 58px;
     }
 
     div {

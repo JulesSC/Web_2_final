@@ -5,18 +5,22 @@
     display: grid;
     grid-template-columns: 6px auto 6px;
     grid-template-areas:". contents .";
-    background-color: $sand;;
+    background-color: $sand;
+    padding: 60px 0px;
 
     @include md{
-        grid-template-columns: 88px auto 88px;
+        grid-template-columns: 8px auto 8px;
+        padding: 70px 0px;
     }
 
     @include lg{
-        grid-template-columns: 10px auto 10px;
+        grid-template-columns: 75px auto 75px;
+        padding: 92px 0px;
     }
 
-    @include lg{
-        grid-template-columns: 210px auto 210px;
+    @include xl{
+        grid-template-columns: 60px auto 60px;
+        padding: 133px 0px;
     }
 
     div{
@@ -48,9 +52,20 @@
         }
         
         ul{
+            margin: 38px 0px 26px 0px;
+
             @include md{
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
+                margin: 64px 0px 22px 0px;
+            }
+
+            @include lg{
+                margin: 92px 0px 40px 0px;
+            }
+
+            @include xl{
+                margin: 108px 0px 70px 0px;
             }
 
             li{
@@ -59,9 +74,11 @@
                 font-style: normal;
                 font-size: rem-calc(12px);
                 text-align: center;
+                margin: 18px 0px;
 
                 @include md{
                     font-size: rem-calc(14px);
+                    margin: 0px 0px;
                 }
 
                 @include lg{
@@ -97,21 +114,35 @@
             }
         }
 
-        button{
-            border: 1px $black solid;
-            background-color: transparent;
-            color: $black;
-            font-family: futura-pt, sans-serif;
-            font-weight: 300;
-            font-style: normal;
-            font-size: rem-calc(10px);
+        #button{
+            display: flex;
+            justify-content: center;
+            
+            button{
+                border: 1px $black solid;
+                background-color: transparent;
+                color: $black;
+                font-family: futura-pt, sans-serif;
+                font-weight: 300;
+                font-style: normal;
+                font-size: rem-calc(10px);
+                width: 100px;
+                padding: 6px 0px;
+    
+                @include md{
+                    font-size: rem-calc(12px);
+                    width: 125px;
+                }
+    
+                @include lg{
+                    font-size: rem-calc(14px);
+                    width: 162px;
+                }
 
-            @include md{
-                font-size: rem-calc(12px);
-            }
-
-            @include lg{
-                font-size: rem-calc(14px);
+                @include xl{
+                    font-size: rem-calc(18px);
+                    width: 205px;
+                }
             }
         }
     }

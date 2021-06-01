@@ -494,7 +494,7 @@ footer {
 }
 @media (min-width: 768px) {
   footer {
-    grid-template-columns: 88px auto 88px;
+    grid-template-columns: 8px auto 8px;
   }
 }
 @media (min-width: 992px) {
@@ -502,9 +502,9 @@ footer {
     grid-template-columns: 10px auto 10px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   footer {
-    grid-template-columns: 210px auto 210px;
+    grid-template-columns: 58px auto 58px;
   }
 }
 footer div {
@@ -1274,20 +1274,24 @@ footer div #right {
   grid-template-columns: 6px auto 6px;
   grid-template-areas: ". contents .";
   background-color: #ECE7E2;
+  padding: 60px 0px;
 }
 @media (min-width: 768px) {
   #sign {
-    grid-template-columns: 88px auto 88px;
+    grid-template-columns: 8px auto 8px;
+    padding: 70px 0px;
   }
 }
 @media (min-width: 992px) {
   #sign {
-    grid-template-columns: 10px auto 10px;
+    grid-template-columns: 75px auto 75px;
+    padding: 92px 0px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #sign {
-    grid-template-columns: 210px auto 210px;
+    grid-template-columns: 60px auto 60px;
+    padding: 133px 0px;
   }
 }
 #sign div {
@@ -1320,10 +1324,24 @@ footer div #right {
     font-weight: 300;
   }
 }
+#sign div ul {
+  margin: 38px 0px 26px 0px;
+}
 @media (min-width: 768px) {
   #sign div ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin: 64px 0px 22px 0px;
+  }
+}
+@media (min-width: 992px) {
+  #sign div ul {
+    margin: 92px 0px 40px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  #sign div ul {
+    margin: 108px 0px 70px 0px;
   }
 }
 #sign div ul li {
@@ -1332,10 +1350,12 @@ footer div #right {
   font-style: normal;
   font-size: 0.75rem;
   text-align: center;
+  margin: 18px 0px;
 }
 @media (min-width: 768px) {
   #sign div ul li {
     font-size: 0.875rem;
+    margin: 0px 0px;
   }
 }
 @media (min-width: 992px) {
@@ -1373,7 +1393,11 @@ footer div #right {
     font-size: 3rem;
   }
 }
-#sign div button {
+#sign div #button {
+  display: flex;
+  justify-content: center;
+}
+#sign div #button button {
   border: 1px #000 solid;
   background-color: transparent;
   color: #000;
@@ -1381,14 +1405,24 @@ footer div #right {
   font-weight: 300;
   font-style: normal;
   font-size: 0.625rem;
+  width: 100px;
+  padding: 6px 0px;
 }
 @media (min-width: 768px) {
-  #sign div button {
+  #sign div #button button {
     font-size: 0.75rem;
+    width: 125px;
   }
 }
 @media (min-width: 992px) {
-  #sign div button {
+  #sign div #button button {
     font-size: 0.875rem;
+    width: 162px;
+  }
+}
+@media (min-width: 1200px) {
+  #sign div #button button {
+    font-size: 1.125rem;
+    width: 205px;
   }
 }
