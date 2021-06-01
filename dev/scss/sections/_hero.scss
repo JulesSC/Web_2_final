@@ -7,18 +7,24 @@
     background-size: cover;
     background-position: center;
     color: $white;
+    padding: 45px 0px 55px 0px;
+    margin-top: -38px;
 
     @include md{
         height: 490px;
         background-position: center top;
+        margin-top: -62px;
     }
 
     @include lg{
         height: 660px;
+        padding: 106px 0px 66px 0px;
+        margin-top: -90px;
     }
 
     @include xl{
         height: 890px;
+        padding: 120px 0px 114px 0px;
     }
 
     #hero-body{
@@ -67,9 +73,20 @@
             }
             
             ul{
+                margin: 35px 0px 5px 0px;
+                
                 @include md{
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
+                    margin: 70px 0px 22px 0px;
+                }
+
+                @include lg{
+                    margin: 72px 0px 32px 0px;
+                }
+
+                @include xl{
+                    margin: 110px 0px 55px 0px;
                 }
 
                 li{
@@ -91,6 +108,19 @@
                         font-size: rem-calc(18px);
                     }
 
+                    h6{
+                        margin-bottom: 10px;
+                        
+                        @include md{
+                            margin-bottom: 20px;
+                        }
+        
+                        @include lg{
+                            margin-bottom: 35px;
+                        }
+
+                    }
+
                     input{
                         background-color: transparent;
                         color: $white;
@@ -100,9 +130,11 @@
                         font-size: rem-calc(21px);
                         border: none;
                         text-align: center;
+                        margin-bottom: 20px;
 
                         @include md{
                             font-size: rem-calc(24px);
+                            margin-bottom: 0px;
                         }
         
                         @include lg{
@@ -116,21 +148,35 @@
                 }
             }
 
-            button{
-                border: 1px $white solid;
-                background-color: transparent;
-                color: $white;
-                font-family: futura-pt, sans-serif;
-                font-weight: 300;
-                font-style: normal;
-                font-size: rem-calc(10px);
+            #button{
+                display: flex;
+                justify-content: center;
+                
+                button{
+                    border: 1px $white solid;
+                    background-color: transparent;
+                    color: $white;
+                    font-family: futura-pt, sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-size: rem-calc(10px);
+                    width: 100px;
+                    padding: 6px 0px;
+    
+                    @include md{
+                        font-size: rem-calc(12px);
+                        width: 125px;
+                    }
+    
+                    @include lg{
+                        font-size: rem-calc(14px);
+                        width: 162px;
+                    }
 
-                @include md{
-                    font-size: rem-calc(12px);
-                }
-
-                @include lg{
-                    font-size: rem-calc(14px);
+                    @include xl{
+                        font-size: rem-calc(14px);
+                        width: 205px;
+                    }
                 }
             }
         }

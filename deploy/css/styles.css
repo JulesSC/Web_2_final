@@ -466,15 +466,19 @@ header {
   display: grid;
   grid-template-columns: 6px auto 6px;
   grid-template-areas: ". header .";
+  background-color: transparent;
+  height: 38px;
 }
 @media (min-width: 768px) {
   header {
     grid-template-columns: 88px auto 88px;
+    height: 62px;
   }
 }
 @media (min-width: 992px) {
   header {
     grid-template-columns: 10px auto 10px;
+    height: 90px;
   }
 }
 @media (min-width: 992px) {
@@ -484,6 +488,10 @@ header {
 }
 header #header {
   grid-area: header;
+  display: flex;
+}
+header #header ul {
+  display: flex;
 }
 
 footer {
@@ -572,21 +580,27 @@ footer div #right {
   background-size: cover;
   background-position: center;
   color: #fff;
+  padding: 45px 0px 55px 0px;
+  margin-top: -38px;
 }
 @media (min-width: 768px) {
   #hero {
     height: 490px;
     background-position: center top;
+    margin-top: -62px;
   }
 }
 @media (min-width: 992px) {
   #hero {
     height: 660px;
+    padding: 106px 0px 66px 0px;
+    margin-top: -90px;
   }
 }
 @media (min-width: 1200px) {
   #hero {
     height: 890px;
+    padding: 120px 0px 114px 0px;
   }
 }
 #hero #hero-body {
@@ -639,10 +653,24 @@ footer div #right {
     font-weight: 300;
   }
 }
+#hero #hero-body section ul {
+  margin: 35px 0px 5px 0px;
+}
 @media (min-width: 768px) {
   #hero #hero-body section ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin: 70px 0px 22px 0px;
+  }
+}
+@media (min-width: 992px) {
+  #hero #hero-body section ul {
+    margin: 72px 0px 32px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-body section ul {
+    margin: 110px 0px 55px 0px;
   }
 }
 #hero #hero-body section ul li {
@@ -667,6 +695,19 @@ footer div #right {
     font-size: 1.125rem;
   }
 }
+#hero #hero-body section ul li h6 {
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  #hero #hero-body section ul li h6 {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #hero #hero-body section ul li h6 {
+    margin-bottom: 35px;
+  }
+}
 #hero #hero-body section ul li input {
   background-color: transparent;
   color: #fff;
@@ -676,10 +717,12 @@ footer div #right {
   font-size: 1.3125rem;
   border: none;
   text-align: center;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   #hero #hero-body section ul li input {
     font-size: 1.5rem;
+    margin-bottom: 0px;
   }
 }
 @media (min-width: 992px) {
@@ -692,7 +735,11 @@ footer div #right {
     font-size: 3rem;
   }
 }
-#hero #hero-body section button {
+#hero #hero-body section #button {
+  display: flex;
+  justify-content: center;
+}
+#hero #hero-body section #button button {
   border: 1px #fff solid;
   background-color: transparent;
   color: #fff;
@@ -700,15 +747,25 @@ footer div #right {
   font-weight: 300;
   font-style: normal;
   font-size: 0.625rem;
+  width: 100px;
+  padding: 6px 0px;
 }
 @media (min-width: 768px) {
-  #hero #hero-body section button {
+  #hero #hero-body section #button button {
     font-size: 0.75rem;
+    width: 125px;
   }
 }
 @media (min-width: 992px) {
-  #hero #hero-body section button {
+  #hero #hero-body section #button button {
     font-size: 0.875rem;
+    width: 162px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-body section #button button {
+    font-size: 0.875rem;
+    width: 205px;
   }
 }
 
