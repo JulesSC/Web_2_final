@@ -1,33 +1,129 @@
 /* =============
     Header
 ============= */
-header{
-    display: grid;
-    grid-template-columns: 6px auto 6px;
-    grid-template-areas:". header .";
+// header{
+//     display: grid;
+//     grid-template-columns: 6px auto 6px;
+//     grid-template-areas:". header .";
+//     background-color: transparent;
+//     height: 38px;
+
+//     @include md{
+//         grid-template-columns: 88px auto 88px;
+//         height: 62px;
+//     }
+
+//     @include lg{
+//         grid-template-columns: 10px auto 10px;
+//         height: 90px;
+//     }
+
+//     @include lg{
+//         grid-template-columns: 210px auto 210px;
+//     }
+
+//     #header{
+//         grid-area: header;
+//         display: flex;
+
+//         ul{
+//             display: flex;
+//         }
+//     }
+// }
+
+header {
     background-color: transparent;
-    height: 38px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    // display: grid;
+    // grid-template-columns: 16px auto 16px;
+    // grid-template-areas: ". header .";
 
-    @include md{
-        grid-template-columns: 88px auto 88px;
-        height: 62px;
-    }
-
-    @include lg{
-        grid-template-columns: 10px auto 10px;
-        height: 90px;
-    }
-
-    @include lg{
-        grid-template-columns: 210px auto 210px;
-    }
-
-    #header{
+    >div {
+        display: grid;
+        grid-template-areas: 
+        "logo burger"
+        "nav nav";
+        grid-template-columns: 20% auto;
         grid-area: header;
-        display: flex;
+        padding: 13px 6px;
 
-        ul{
+        @include md{
+            padding: 23px 86px;
+        }
+
+        @include lg{
+            // padding: 32px 200px;
+        }
+
+        // @include lg {
+        //     grid-template-areas: "logo nav";
+        //     grid-template-columns: 20% auto;
+        // }
+
+        // @include xl{
+        //     grid-area: header;
+        // }
+
+        #logo-container {
+            grid-area: logo;
+            font-family: vincente, serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: rem-calc(18px);
+
+            @include md{
+                font-size: rem-calc(24px);
+            }
+
+            @include lg{
+                display: none;
+            }
+
+           a:link, a:visited {
+                transition: 0.25s;
+                color: $white;
+
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+
+        #burger-container {
+            align-items: center;
             display: flex;
+            grid-area: burger;
+
+            @include lg {
+                display: none !important;
+            }
+
+            i {
+                margin-left: auto;
+                cursor: pointer;
+                font-size: rem-calc(20);
+                color: $white;
+            }
+        }
+
+        #nav-container {
+            background-color: transparent;
+            display: none;
+            grid-area: nav;
+            // padding: 20px 10px 10px;
+            // height: 100vh;
+
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+
+
+            @include lg {
+                display: block !important;
+            }
         }
     }
 }

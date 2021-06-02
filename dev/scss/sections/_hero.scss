@@ -1,53 +1,57 @@
 /* =============
     Hero
 ============= */
-#hero{
+#hero {
     background-image: url("../img/hero/hero.jpg");
-    height: 415px;
+    height: 453px;
+    width: 100%;
     background-size: cover;
     background-position: center;
     color: $white;
-    padding: 45px 0px 55px 0px;
-    margin-top: -38px;
+    padding: 55px 0px;
+    margin-top: -48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    @include md{
-        height: 430px;
+    @include md {
+        height: 493px;
         background-position: center top;
-        margin-top: -62px;
+        margin-top: -74px;
     }
 
-    @include lg{
-        height: 570px;
-        padding: 106px 0px 66px 0px;
-        margin-top: -90px;
+    @include lg {
+        height: 660px;
+        padding: 66px 0px;
+        margin-top: -88px;
     }
 
-    @include xl{
-        height: 796px;
-        padding: 120px 0px 114px 0px;
+    @include xl {
+        height: 888px;
+        padding: 120px 0px;
     }
 
-    #hero-body{
+    #hero-body {
         display: grid;
         grid-template-columns: 86px auto 86px;
         grid-template-areas: ". content .";
-        
-        section{
+
+        section {
             grid-area: content;
 
-            @include md{
+            @include md {
                 grid-template-columns: 104px auto 104px;
             }
-    
-            @include lg{
+
+            @include lg {
                 grid-template-columns: 130px auto 130px;
             }
-    
-            @include xl{
+
+            @include xl {
                 grid-template-columns: 212px auto 212px;
             }
-            
-            h1{
+
+            h1 {
                 font-family: vincente, serif;
                 font-weight: 400;
                 font-style: normal;
@@ -55,73 +59,73 @@
                 line-height: 55px;
                 text-align: center;
 
-                @include md{
+                @include md {
                     font-size: rem-calc(100px);
                     line-height: 85px;
                 }
 
-                @include lg{
+                @include lg {
                     font-size: rem-calc(140px);
                     line-height: 120px;
                 }
 
-                @include xl{
+                @include xl {
                     font-size: rem-calc(200px);
                     line-height: 175px;
                     font-weight: 300;
                 }
             }
-            
-            ul{
+
+            ul {
                 margin: 35px 0px 5px 0px;
-                
-                @include md{
+
+                @include md {
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
                     margin: 70px 0px 22px 0px;
                 }
 
-                @include lg{
+                @include lg {
                     margin: 72px 0px 32px 0px;
                 }
 
-                @include xl{
+                @include xl {
                     margin: 110px 0px 55px 0px;
                 }
 
-                li{
+                li {
                     font-family: futura-pt, sans-serif;
                     font-weight: 300;
                     font-style: normal;
                     font-size: rem-calc(12px);
                     text-align: center;
 
-                    @include md{
+                    @include md {
                         font-size: rem-calc(14px);
                     }
-    
-                    @include lg{
+
+                    @include lg {
                         font-size: rem-calc(16px);
                     }
-    
-                    @include xl{
+
+                    @include xl {
                         font-size: rem-calc(18px);
                     }
 
-                    h6{
+                    h6 {
                         margin-bottom: 10px;
-                        
-                        @include md{
+
+                        @include md {
                             margin-bottom: 20px;
                         }
-        
-                        @include lg{
+
+                        @include lg {
                             margin-bottom: 35px;
                         }
 
                     }
 
-                    input{
+                    input {
                         background-color: transparent;
                         color: $white;
                         font-family: futura-pt, sans-serif;
@@ -133,16 +137,16 @@
                         text-align: center;
                         margin-bottom: 20px;
 
-                        @include md{
+                        @include md {
                             font-size: rem-calc(24px);
                             margin-bottom: 0px;
                         }
-        
-                        @include lg{
+
+                        @include lg {
                             font-size: rem-calc(36px);
                         }
-        
-                        @include xl{
+
+                        @include xl {
                             font-size: rem-calc(48px);
                         }
 
@@ -153,11 +157,13 @@
                             opacity: 1;
                             font-variation-settings: "wght"300;
                         }
+
                         &:-ms-input-placeholder {
                             /* Internet Explorer 10-11 */
                             color: $white;
                             font-variation-settings: "wght"300;
                         }
+
                         &::-ms-input-placeholder {
                             /* Microsoft Edge */
                             color: $white;
@@ -167,11 +173,11 @@
                 }
             }
 
-            #button{
+            #button {
                 display: flex;
                 justify-content: center;
-                
-                button{
+
+                button {
                     border: 1px $white solid;
                     background-color: transparent;
                     color: $white;
@@ -181,18 +187,18 @@
                     font-size: rem-calc(10px);
                     width: 100px;
                     padding: 6px 0px;
-    
-                    @include md{
+
+                    @include md {
                         font-size: rem-calc(12px);
                         width: 125px;
                     }
-    
-                    @include lg{
+
+                    @include lg {
                         font-size: rem-calc(14px);
                         width: 162px;
                     }
 
-                    @include xl{
+                    @include xl {
                         font-size: rem-calc(14px);
                         width: 205px;
                     }
