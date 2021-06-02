@@ -8,11 +8,10 @@
 
         @include lg {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
         }
 
         li {
-            // margin-bottom: 20px;
             text-align: center;
             font-family: futura-pt, sans-serif;
             font-weight: 300;

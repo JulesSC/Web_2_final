@@ -466,7 +466,7 @@ textarea {
 @media (min-width: 992px) {
   #nav-container ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 #nav-container ul li {
