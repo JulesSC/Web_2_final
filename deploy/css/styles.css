@@ -501,10 +501,16 @@ textarea {
   color: #000;
 }
 #nav-container ul #Amangiri {
-  font-family: vincente, serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2.25rem;
+  display: none;
+}
+@media (min-width: 992px) {
+  #nav-container ul #Amangiri {
+    font-family: vincente, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.25rem;
+    display: list-item;
+  }
 }
 #nav-container ul li:last-child {
   border: none;
@@ -529,6 +535,11 @@ header > div {
 @media (min-width: 768px) {
   header > div {
     padding: 23px 86px;
+  }
+}
+@media (min-width: 992px) {
+  header > div {
+    padding: 32px 205px;
   }
 }
 header > div #logo-container {
@@ -773,7 +784,7 @@ footer div #right ul #locations {
   #hero {
     height: 660px;
     padding: 66px 0px;
-    margin-top: -88px;
+    margin-top: -106px;
   }
 }
 @media (min-width: 1200px) {
@@ -964,6 +975,10 @@ footer div #right ul #locations {
     font-size: 0.875rem;
     width: 205px;
   }
+}
+#hero #hero-body section #button button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: 0.5s;
 }
 
 /* =============
@@ -1697,4 +1712,8 @@ footer div #right ul #locations {
     font-size: 1.125rem;
     width: 205px;
   }
+}
+#sign div #button button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
 }

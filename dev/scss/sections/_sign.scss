@@ -163,6 +163,11 @@
                     width: 205px;
                 }
             }
+
+            button:hover{
+                background-color: rgba(0,0,0, 0.1);
+                transition: 0.50s;
+            }
         }
     }
 }
