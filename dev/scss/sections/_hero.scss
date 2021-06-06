@@ -3,21 +3,21 @@
 ============= */
 #hero {
     background-image: url("../img/hero/hero.jpg");
-    height: 453px;
+    height: 553px;
     width: 100%;
     background-size: cover;
     background-position: center;
     color: $white;
     padding: 55px 0px;
-    margin-top: -48px;
+    margin-top: -170px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     @include md {
-        height: 493px;
+        height: 593px;
         background-position: center top;
-        margin-top: -74px;
+        margin-top: -195px;
     }
 
     @include lg {

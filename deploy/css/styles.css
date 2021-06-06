@@ -463,14 +463,19 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  padding: 8px;
+}
 @media (min-width: 992px) {
   #nav-container ul {
+    padding: 0px;
     display: flex;
     justify-content: space-between;
   }
 }
 #nav-container ul li {
-  text-align: center;
+  padding: 2px;
+  text-align: right;
   font-family: futura-pt, sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -478,6 +483,8 @@ textarea {
 }
 @media (min-width: 992px) {
   #nav-container ul li {
+    padding: 0px;
+    text-align: center;
     align-items: center;
     display: flex;
   }
@@ -576,9 +583,13 @@ header > div #burger-container {
     display: none !important;
   }
 }
-header > div #burger-container i {
+header > div #burger-container button {
   margin-left: auto;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+header > div #burger-container button i {
   font-size: 1.25rem;
   color: #fff;
 }
@@ -762,22 +773,22 @@ footer div #right ul #locations {
 ============= */
 #hero {
   background-image: url("../img/hero/hero.jpg");
-  height: 453px;
+  height: 553px;
   width: 100%;
   background-size: cover;
   background-position: center;
   color: #fff;
   padding: 55px 0px;
-  margin-top: -48px;
+  margin-top: -170px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 @media (min-width: 768px) {
   #hero {
-    height: 493px;
+    height: 593px;
     background-position: center top;
-    margin-top: -74px;
+    margin-top: -195px;
   }
 }
 @media (min-width: 992px) {

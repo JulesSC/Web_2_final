@@ -70,11 +70,18 @@ header {
                 display: none !important;
             }
 
-            i {
+            button{
                 margin-left: auto;
                 cursor: pointer;
-                font-size: rem-calc(20);
-                color: $white;
+                border: none;
+                background-color: transparent;
+                
+                i {
+                    // margin-left: auto;
+                    // cursor: pointer;
+                    font-size: rem-calc(20);
+                    color: $white;
+                }
             }
         }
 

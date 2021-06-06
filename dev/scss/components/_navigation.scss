@@ -3,33 +3,32 @@
 ============= */
 #nav-container {
     ul {
-        // height: 100%;
-        // margin-top: -20px;
+        padding: 8px;
 
         @include lg {
+            padding: 0px;
             display: flex;
             justify-content: space-between;
         }
 
         li {
-            text-align: center;
+            padding: 2px;
+            text-align: right;
             font-family: futura-pt, sans-serif;
             font-weight: 300;
             font-style: normal;
             font-size: rem-calc(12px);
 
             @include lg {
+                padding: 0px;
+                text-align: center;
                 align-items: center;
-                // border-right: 2px solid $charcoal;
                 display: flex;
-                // margin-bottom: 0px;
             }
 
             @include xl {
                 align-items: center;
-                // border-right: 2px solid $charcoal;
                 display: flex;
-                // margin-bottom: 0px;
                 font-size: rem-calc(18px);
             }
 
