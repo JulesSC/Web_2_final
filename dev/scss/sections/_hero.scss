@@ -35,6 +35,15 @@
         display: grid;
         grid-template-columns: 86px auto 86px;
         grid-template-areas: ". content .";
+        padding-top: 125px;
+
+        @include md{
+            padding-top: 150px;
+        }
+
+        @include lg{
+            padding-top: 0px;
+        }
 
         section {
             grid-area: content;
