@@ -1,26 +1,27 @@
 /* =============
     Base
 ============= */
-figure{
+figure {
     padding: 0;
     margin: 0;
 }
 
-ul{
+ul {
     padding: 0;
     margin: 0;
-    li{
+
+    li {
         list-style: none;
     }
 }
 
-.container-grid{
+.container-grid {
     display: grid;
     grid-template-columns: auto 1200px auto;
     grid-template-areas: ". grid-content .";
     min-height: 100vh;
 
-    .grid-content{
+    .grid-content {
         grid-area: grid-content;
         min-height: 100vh;
         display: flex;
@@ -29,38 +30,43 @@ ul{
     }
 }
 
-img{
+img {
     width: 100%;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     padding: 0px;
     margin: 0px;
 }
 
-p{
+p {
     font-family: futura-pt, sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: rem-calc(12px);
     line-height: 12px;
 
-    @include md{
+    @include md {
         font-size: rem-calc(14px);
         line-height: 14px;
     }
 
-    @include lg{
+    @include lg {
         font-size: rem-calc(16px);
         line-height: 16px;
     }
 
-    @include xl{
+    @include xl {
         font-size: rem-calc(21px);
         line-height: 18px;
     }
 }
 
-a{
+a {
     text-decoration: none;
 }

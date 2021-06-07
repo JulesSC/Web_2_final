@@ -12,18 +12,18 @@ header {
 
     >div {
         display: grid;
-        grid-template-areas: 
-        "logo burger"
-        "nav nav";
+        grid-template-areas:
+            "logo burger"
+            "nav nav";
         grid-template-columns: 20% auto;
         grid-area: header;
         padding: 13px 6px;
 
-        @include md{
+        @include md {
             padding: 23px 86px;
         }
 
-        @include lg{
+        @include lg {
             padding: 32px 205px;
         }
 
@@ -43,15 +43,16 @@ header {
             font-style: normal;
             font-size: rem-calc(18px);
 
-            @include md{
+            @include md {
                 font-size: rem-calc(24px);
             }
 
-            @include lg{
+            @include lg {
                 display: none;
             }
 
-           a:link, a:visited {
+            a:link,
+            a:visited {
                 transition: 0.25s;
                 color: $white;
 
@@ -70,12 +71,12 @@ header {
                 display: none !important;
             }
 
-            button{
+            button {
                 margin-left: auto;
                 cursor: pointer;
                 border: none;
                 background-color: transparent;
-                
+
                 i {
                     // margin-left: auto;
                     // cursor: pointer;

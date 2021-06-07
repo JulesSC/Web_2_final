@@ -383,7 +383,12 @@ img {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   padding: 0px;
   margin: 0px;
 }
@@ -425,7 +430,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   padding: 0;
 }
@@ -566,11 +574,13 @@ header > div #logo-container {
     display: none;
   }
 }
-header > div #logo-container a:link, header > div #logo-container a:visited {
+header > div #logo-container a:link,
+header > div #logo-container a:visited {
   transition: 0.25s;
   color: #fff;
 }
-header > div #logo-container a:link:hover, header > div #logo-container a:visited:hover {
+header > div #logo-container a:link:hover,
+header > div #logo-container a:visited:hover {
   color: #000;
 }
 header > div #burger-container {
@@ -1168,7 +1178,8 @@ footer div #right ul #locations {
 #accommodation div h6 {
   border-bottom: 1px #000 solid;
 }
-#accommodation div h6, #accommodation div p {
+#accommodation div h6,
+#accommodation div p {
   font-family: futura-pt, sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -1177,19 +1188,22 @@ footer div #right ul #locations {
   padding: 10px 0px;
 }
 @media (min-width: 768px) {
-  #accommodation div h6, #accommodation div p {
+  #accommodation div h6,
+#accommodation div p {
     font-size: 0.875rem;
     line-height: 14px;
   }
 }
 @media (min-width: 992px) {
-  #accommodation div h6, #accommodation div p {
+  #accommodation div h6,
+#accommodation div p {
     font-size: 1rem;
     line-height: 16px;
   }
 }
 @media (min-width: 1200px) {
-  #accommodation div h6, #accommodation div p {
+  #accommodation div h6,
+#accommodation div p {
     font-size: 1.3125rem;
     line-height: 18px;
   }

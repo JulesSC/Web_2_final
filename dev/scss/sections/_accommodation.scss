@@ -1,64 +1,65 @@
 /* =============
     Accommodation
 ============= */
-#accommodation{
+#accommodation {
     display: grid;
     grid-template-columns: 36px auto 36px;
-    grid-template-areas:". contents .";
+    grid-template-areas: ". contents .";
     background-color: $sand;
 
-    @include md{
+    @include md {
         grid-template-columns: 88px auto 88px;
     }
 
-    @include lg{
+    @include lg {
         grid-template-columns: 95px auto 95px;
     }
 
-    @include lg{
+    @include lg {
         grid-template-columns: 118px auto 118px;
     }
 
-    div{
+    div {
         grid-area: contents;
         margin: 50px 0px;
 
-        @include md{
+        @include md {
             margin: 40px 0px;
         }
 
-        @include xl{
+        @include xl {
             margin: 85px 0px;
         }
 
-        h4{
+        h4 {
             font-family: vincente, serif;
             font-weight: 400;
             font-style: normal;
             font-size: rem-calc(36px);
             margin-bottom: 40px;
 
-            @include md{
+            @include md {
                 font-size: rem-calc(48px);
                 margin-bottom: 22px;
             }
 
-            @include lg{
+            @include lg {
                 font-size: rem-calc(60px);
                 margin-bottom: 42px;
             }
 
-            @include xl{
+            @include xl {
                 font-size: rem-calc(72px);
                 margin-bottom: 60px;
             }
         }
 
-        h6{
+        h6 {
             border-bottom: 1px $black solid;
         }
 
-        h6,p{
+        h6,
+        p {
             font-family: futura-pt, sans-serif;
             font-weight: 300;
             font-style: normal;
@@ -66,43 +67,43 @@
             line-height: 12px;
             padding: 10px 0px;
 
-            @include md{
+            @include md {
                 font-size: rem-calc(14px);
                 line-height: 14px;
             }
 
-            @include lg{
+            @include lg {
                 font-size: rem-calc(16px);
                 line-height: 16px;
             }
 
-            @include xl{
+            @include xl {
                 font-size: rem-calc(21px);
                 line-height: 18px;
             }
         }
 
-        ul{
-            @include md{
+        ul {
+            @include md {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
             }
-            
-            @include lg{
+
+            @include lg {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 gap: 16px;
             }
 
-            :last-child{
+            :last-child {
                 margin-bottom: 0px;
             }
 
-            li{
+            li {
                 margin: 50px 0px;
 
-                @include md{
+                @include md {
                     margin: 0px 0px;
                 }
 

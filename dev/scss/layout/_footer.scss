@@ -16,12 +16,12 @@ footer {
             margin: 0px 8px;
             padding: 26px 0px;
         }
-    
+
         @include lg {
             margin: 0px 10px;
             padding: 38px 0px;
         }
-    
+
         @include xl {
             margin: 0px 58px;
             padding: 54px 0px;
@@ -48,9 +48,10 @@ footer {
             }
         }
 
-        #left{
-            ul{
-                li{
+        #left {
+            ul {
+                li {
+
                     a:link,
                     a:visited {
                         color: $black;
@@ -63,54 +64,54 @@ footer {
                     }
                 }
 
-                #address{
+                #address {
                     display: none;
-                
+
                     @include md {
                         display: list-item;
                     }
-    
+
                 }
             }
         }
 
-        #middle{
-            h4{
+        #middle {
+            h4 {
                 font-family: vincente, serif;
                 font-weight: 400;
                 font-style: normal;
                 font-size: rem-calc(21px);
                 text-align: center;
-    
-                @include md{
+
+                @include md {
                     font-size: rem-calc(36px);
                 }
-    
-                @include lg{
+
+                @include lg {
                     font-size: rem-calc(48px);
                 }
-    
-                @include xl{
+
+                @include xl {
                     font-size: rem-calc(60px);
                     font-weight: 300;
                 }
             }
 
-            ul{
+            ul {
                 display: flex;
                 justify-content: center;
 
-                li{
+                li {
                     margin: 0px 5px;
-                    
-                    @include md{
+
+                    @include md {
                         margin: 0px 10px;
                     }
-        
-                    @include lg{
+
+                    @include lg {
                         margin: 0px 12px;
                     }
-                    
+
                     a:link,
                     a:visited {
                         color: $black;
@@ -122,14 +123,14 @@ footer {
                         }
                     }
 
-                    i{
+                    i {
                         font-size: rem-calc(10px);
 
-                        @include md{
+                        @include md {
                             font-size: rem-calc(18px);
                         }
-            
-                        @include lg{
+
+                        @include lg {
                             font-size: rem-calc(22px);
                         }
                     }
@@ -140,8 +141,9 @@ footer {
         #right {
             text-align: right;
 
-            ul{
-                li{
+            ul {
+                li {
+
                     a:link,
                     a:visited {
                         color: $black;
@@ -154,17 +156,17 @@ footer {
                     }
                 }
 
-                #exclusive{
+                #exclusive {
                     display: none;
-                
+
                     @include md {
                         display: list-item;
                     }
                 }
-    
-                #locations{
+
+                #locations {
                     display: none;
-                
+
                     @include md {
                         display: list-item;
                     }

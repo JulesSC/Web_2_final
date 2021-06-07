@@ -37,11 +37,11 @@
         grid-template-areas: ". content .";
         padding-top: 125px;
 
-        @include md{
+        @include md {
             padding-top: 150px;
         }
 
-        @include lg{
+        @include lg {
             padding-top: 0px;
         }
 
@@ -213,8 +213,8 @@
                     }
                 }
 
-                button:hover{
-                    background-color: rgba(255,255,255, 0.2);
+                button:hover {
+                    background-color: rgba(255, 255, 255, 0.2);
                     transition: 0.50s;
                 }
             }
