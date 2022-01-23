@@ -16,7 +16,7 @@ header {
             "logo burger"
             "nav nav";
         grid-template-columns: 20% auto;
-        grid-area: header;
+        // grid-area: header;
         padding: 13px 6px;
 
         @include md {
