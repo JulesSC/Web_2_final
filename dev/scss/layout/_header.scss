@@ -58,32 +58,46 @@ header {
 
                 &:hover {
                     color: $black;
-                }
+                }   
             }
         }
 
         #burger-container {
             align-items: center;
             display: flex;
+            justify-content: flex-end;
             grid-area: burger;
 
             @include lg {
                 display: none !important;
             }
 
-            button {
-                margin-left: auto;
-                cursor: pointer;
-                border: none;
-                background-color: transparent;
+            #burger{
 
-                i {
-                    // margin-left: auto;
-                    // cursor: pointer;
-                    font-size: rem-calc(20);
-                    color: $white;
+                position:relative;
+                z-index: 10000;
+
+                height: 100%;
+                // background-color: orange;
+
+                svg{
+                    height: 50%;
                 }
             }
+
+            // button {
+            //     margin-left: auto;
+            //     cursor: pointer;
+            //     border: none;
+            //     background-color: transparent;
+
+            //     i {
+            //         // margin-left: auto;
+            //         // cursor: pointer;
+            //         font-size: rem-calc(20);
+            //         color: $white;
+            //     }
+            // }
         }
 
         #nav-container {

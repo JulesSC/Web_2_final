@@ -5,4 +5,4 @@ gsap.registerPlugin(DrawSVGPlugin);
 
 export const burgerTL = new gsap.timeline({paused:true});
 
-burgerTL.to("#outline",{duration:1, alpha:0});
+// burgerTL.to("#outline",{duration:1, alpha:0});

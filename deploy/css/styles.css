@@ -585,6 +585,7 @@ header > div #logo-container a:visited:hover {
 header > div #burger-container {
   align-items: center;
   display: flex;
+  justify-content: flex-end;
   grid-area: burger;
 }
 @media (min-width: 992px) {
@@ -592,15 +593,13 @@ header > div #burger-container {
     display: none !important;
   }
 }
-header > div #burger-container button {
-  margin-left: auto;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
+header > div #burger-container #burger {
+  position: relative;
+  z-index: 10000;
+  height: 100%;
 }
-header > div #burger-container button i {
-  font-size: 1.25rem;
-  color: #fff;
+header > div #burger-container #burger svg {
+  height: 50%;
 }
 header > div #nav-container {
   background-color: transparent;

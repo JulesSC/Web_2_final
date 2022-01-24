@@ -9,14 +9,6 @@
   ],
   "creatorBuild" : "34214",
   "files" : {
-    "\/.design_dev_deploy.zip.icloud" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/.design_dev_deploy.zip.icloud",
-      "oF" : 0
-    },
     "\/assets\/cross.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -745,6 +737,14 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/gsap-bonus.tgz" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gsap-bonus.tgz",
+      "oF" : 0
+    },
     "\/node_modules" : {
       "ft" : 65536,
       "oA" : 2,
@@ -780,17 +780,6 @@
       "mi" : 1,
       "oA" : 1,
       "oAP" : "\/node_modules\/gsap\/index-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/node_modules\/jquery\/dist\/jquery.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 1,
-      "oAP" : "\/node_modules\/jquery\/dist\/jquery-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
