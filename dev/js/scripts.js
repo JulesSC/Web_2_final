@@ -20,6 +20,8 @@ import { burgerTL } from "./burgerAnimation";
 var burgerButton = document.querySelector("#burger");
 
 burgerButton.addEventListener("click", function(){
-    console.log("burger clicked");
+    // console.log("burger clicked");
+
+    burgerTL.play();
 })
 
