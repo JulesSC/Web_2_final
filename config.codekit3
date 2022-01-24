@@ -17,6 +17,26 @@
       "oAP" : "\/.design_dev_deploy.zip.icloud",
       "oF" : 0
     },
+    "\/assets\/cross.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/cross.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/flat.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/flat.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -219,10 +239,18 @@
       "oAP" : "\/deploy\/img\/hero\/hero.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/deploy\/img\/intro\/.intro.jpg.icloud" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/intro\/.intro.jpg.icloud",
+      "oF" : 0
     },
     "\/deploy\/img\/intro\/intro_temp.jpg" : {
       "ft" : 16384,
@@ -230,19 +258,6 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/intro\/intro_temp.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/intro\/intro.jpg" : {
-      "ft" : 16384,
-      "iS" : 5752505,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/intro\/intro.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -437,6 +452,17 @@
       "oA" : 0,
       "oAP" : "\/deploy\/index.html",
       "oF" : 2
+    },
+    "\/dev\/js\/burgerAnimation.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/burgerAnimation-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/dev\/js\/scripts.js" : {
       "bF" : 4,
@@ -724,6 +750,39 @@
       "oA" : 2,
       "oAP" : "\/node_modules",
       "oF" : 0
+    },
+    "\/node_modules\/gsap\/CSSPlugin.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/node_modules\/gsap\/CSSPlugin-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/node_modules\/gsap\/gsap-core.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/node_modules\/gsap\/gsap-core-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/node_modules\/gsap\/index.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/node_modules\/gsap\/index-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/node_modules\/jquery\/dist\/jquery.js" : {
       "bF" : 0,
