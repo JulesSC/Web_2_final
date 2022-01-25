@@ -236,20 +236,25 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/intro\/.intro.jpg.icloud" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/intro\/.intro.jpg.icloud",
-      "oF" : 0
-    },
     "\/deploy\/img\/intro\/intro_temp.jpg" : {
       "ft" : 16384,
       "iS" : 64198,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/intro\/intro_temp.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/intro\/intro.jpg" : {
+      "ft" : 16384,
+      "iS" : 5752505,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/intro\/intro.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -452,6 +457,17 @@
       "mi" : 1,
       "oA" : 1,
       "oAP" : "\/dev\/js\/burgerAnimation-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dev\/js\/mobileMenu.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/mobileMenu-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -1580,7 +1596,7 @@
         "optionString" : "{'allowParens': true}"
       },
       "no-console" : {
-        "active" : 1,
+        "active" : 0,
         "optionString" : "{'allow': ['warn', 'error']}"
       },
       "no-const-assign" : {

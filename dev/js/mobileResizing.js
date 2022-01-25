@@ -5,4 +5,14 @@ export function displayWindowSize(){
     let menuHeight = menu.offsetHeight;
 
     console.log(menuHeight);
+
+    gsap.set("#nav-container", {y:-menuHeight})
+
+    if(document.documentElement.clientWidth <= 1024){
+        console.log("hide");
+        gsap.set("#nav-container", {y:-menuHeight});
+    }else{
+        console.log("un-hide");
+        gsap.set("#nav-container", {y:0});
+    }
 }
