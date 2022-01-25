@@ -3,7 +3,7 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 
 gsap.registerPlugin(DrawSVGPlugin);
 
-gsap.set("burger-lines", {transformOrigin:"center"});
+gsap.set(".burger-lines", {transformOrigin:"center"});
 
 const topTL = new gsap.timeline();
 // topTL.to(".burger-lines:nth-child(1)", {duration: 0.25, y:"+=8"})

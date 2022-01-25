@@ -19,9 +19,21 @@ import { burgerTL } from "./burgerAnimation";
 
 var burgerButton = document.querySelector("#burger");
 
+let canISeeMenu = false;
+
 burgerButton.addEventListener("click", function(){
     // console.log("burger clicked");
 
-    burgerTL.play();
+    // = // asignment: setting object 1 = to object 2
+    // == // a loose comparison
+    // === // asks if object one is exactly the same as object two
+
+    if (canISeeMenu === false){
+        burgerTL.play();
+        canISeeMenu = true;
+    }else{
+        burgerTL.reverse();
+        canISeeMenu = false;
+    }
 })
 
