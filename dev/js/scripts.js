@@ -16,6 +16,7 @@
 // })
 
 import { burgerTL } from "./burgerAnimation";
+import { displayWindowSize } from "./mobileResizing";
 
 var burgerButton = document.querySelector("#burger");
 
@@ -36,4 +37,6 @@ burgerButton.addEventListener("click", function(){
         canISeeMenu = false;
     }
 })
+
+window.addEventListener('load', displayWindowSize);
 

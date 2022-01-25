@@ -603,7 +603,6 @@ header > div #burger-container #burger svg {
 }
 header > div #nav-container {
   background-color: transparent;
-  display: none;
   grid-area: nav;
 }
 @media (min-width: 992px) {
